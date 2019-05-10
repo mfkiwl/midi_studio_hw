@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name midi_studio_components)(type Legacy)(uri /home/lasker/Documents/hardware_design/midi_studio_hw/v1_kicad/midi_studio_v1/midi_studio_components.lib)(options "")(descr ""))
+)
