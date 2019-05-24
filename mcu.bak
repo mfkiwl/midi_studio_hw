@@ -1,0 +1,298 @@
+EESchema Schematic File Version 4
+LIBS:midi_studio_v1-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 1800 1850 0    50   Input ~ 0
+SAI1_FS_A
+Text GLabel 1800 1950 0    50   Input ~ 0
+SAI1_SCK_A
+Text GLabel 1800 2050 0    50   Input ~ 0
+SAI1_SD_A
+Text GLabel 1800 2650 0    50   Input ~ 0
+FMC_D30
+Text GLabel 1800 2750 0    50   Input ~ 0
+FMC_D31
+Text GLabel 1800 2850 0    50   Input ~ 0
+USB_OTG_HS_ULPI_DIR
+Text GLabel 1800 3150 0    50   Input ~ 0
+FMC_A0
+Text GLabel 1800 3250 0    50   Input ~ 0
+FMC_A1
+Text GLabel 1800 3350 0    50   Input ~ 0
+FMC_A2
+Text GLabel 1800 3450 0    50   Input ~ 0
+LTDC_HSYNC
+Text GLabel 1800 3550 0    50   Input ~ 0
+LTDC_VSYNC
+Text GLabel 1800 3650 0    50   Input ~ 0
+LTDC_CLK
+Text GLabel 1800 3750 0    50   Input ~ 0
+FMC_A3
+Text GLabel 1800 3850 0    50   Input ~ 0
+FMC_A4
+Text GLabel 1800 3950 0    50   Input ~ 0
+FMC_A5
+Text GLabel 2950 1650 0    50   Input ~ 0
+UART7_RX
+Text GLabel 2950 1750 0    50   Input ~ 0
+UART7_TX
+Text GLabel 2950 2050 0    50   Input ~ 0
+LTDC_DE
+Text GLabel 2950 2450 0    50   Input ~ 0
+USB_OTG_HS_ULPI_STP
+Text GLabel 2950 2650 0    50   Input ~ 0
+FMC_SDNE0
+Text GLabel 2950 2750 0    50   Input ~ 0
+USB_OTG_HS_ULPI_NXT
+Text GLabel 2950 3250 0    50   Input ~ 0
+TIM5_CH1
+Text GLabel 2950 3350 0    50   Input ~ 0
+TIM5_CH2
+Text GLabel 2950 3750 0    50   Input ~ 0
+LTDC_G5
+Text GLabel 2950 3950 0    50   Input ~ 0
+USB_OTG_HS_ULPI_D0
+Text GLabel 4000 1750 0    50   Input ~ 0
+USB_OTG_HS_ULPI_CK
+Text GLabel 4000 1850 0    50   Input ~ 0
+SPI1_MISO
+Text GLabel 4000 1950 0    50   Input ~ 0
+SPI1_MOSI
+Text GLabel 4000 2450 0    50   Input ~ 0
+USB_OTG_HS_ULPI_D1
+Text GLabel 4000 2550 0    50   Input ~ 0
+USB_OTG_HS_ULPI_D2
+Text GLabel 4000 2750 0    50   Input ~ 0
+LTDC_G2
+Text GLabel 4000 2850 0    50   Input ~ 0
+LTDC_R7
+Text GLabel 4000 3250 0    50   Input ~ 0
+LTDC_R5
+Text GLabel 4000 3350 0    50   Input ~ 0
+FMC_SDNRAS
+Text GLabel 4000 3450 0    50   Input ~ 0
+FMC_A6
+Text GLabel 4000 3750 0    50   Input ~ 0
+FMC_A7
+Text GLabel 4000 3850 0    50   Input ~ 0
+FMC_A8
+Text GLabel 4000 3950 0    50   Input ~ 0
+FMC_A9
+Text GLabel 4000 4050 0    50   Input ~ 0
+FMC_A10
+Text GLabel 4000 4150 0    50   Input ~ 0
+FMC_A11
+Text GLabel 4950 1650 0    50   Input ~ 0
+FMC_D4
+Text GLabel 4950 1750 0    50   Input ~ 0
+FMC_D5
+Text GLabel 4950 1850 0    50   Input ~ 0
+FMC_D6
+Text GLabel 4950 2150 0    50   Input ~ 0
+FMC_D7
+Text GLabel 4950 2250 0    50   Input ~ 0
+FMC_D8
+Text GLabel 4950 2350 0    50   Input ~ 0
+FMC_D9
+Text GLabel 4950 2450 0    50   Input ~ 0
+FMC_D10
+Text GLabel 4950 2550 0    50   Input ~ 0
+FMC_D11
+Text GLabel 4950 2650 0    50   Input ~ 0
+FMC_D12
+Text GLabel 4950 2750 0    50   Input ~ 0
+USB_OTG_HS_ULPI_D3
+Text GLabel 4950 3550 0    50   Input ~ 0
+FMC_D16
+Text GLabel 4950 3650 0    50   Input ~ 0
+FMC_D17
+Text GLabel 4950 3750 0    50   Input ~ 0
+FMC_D18
+Text GLabel 4950 3850 0    50   Input ~ 0
+FMC_D19
+Text GLabel 4950 3950 0    50   Input ~ 0
+FMC_D20
+Text GLabel 6250 1950 0    50   Input ~ 0
+FMC_D13
+Text GLabel 6250 2050 0    50   Input ~ 0
+FMC_D14
+Text GLabel 6250 2150 0    50   Input ~ 0
+FMC_D15
+Text GLabel 6250 2750 0    50   Input ~ 0
+FMC_D0
+Text GLabel 6250 2850 0    50   Input ~ 0
+FMC_D1
+Text GLabel 6250 3350 0    50   Input ~ 0
+LTDC_G3
+Text GLabel 6250 3950 0    50   Input ~ 0
+LTDC_G7
+Text GLabel 6250 4050 0    50   Input ~ 0
+FMC_A12
+Text GLabel 7550 1650 0    50   Input ~ 0
+FMC_BA0
+Text GLabel 7550 1750 0    50   Input ~ 0
+FMC_BA1
+Text GLabel 7550 2050 0    50   Input ~ 0
+FMC_SDCLK
+Text GLabel 7550 2550 0    50   Input ~ 0
+SDMMC1_D0
+Text GLabel 7550 2650 0    50   Input ~ 0
+SDMMC1_D1
+Text GLabel 7550 2750 0    50   Input ~ 0
+RCC_MCO_1
+Text GLabel 7550 2950 0    50   Input ~ 0
+LTDC_B4
+Text GLabel 7550 3050 0    50   Input ~ 0
+USB_OTG_FS_DM
+Text GLabel 7550 3150 0    50   Input ~ 0
+USB_OTG_FS_DP
+Text GLabel 7550 3650 0    50   Input ~ 0
+FMC_D21
+Text GLabel 7550 3750 0    50   Input ~ 0
+FMC_D22
+Text GLabel 7550 3850 0    50   Input ~ 0
+FMC_D23
+Text GLabel 7550 3950 0    50   Input ~ 0
+FMC_D24
+Text GLabel 7550 4050 0    50   Input ~ 0
+FMC_D25
+Text GLabel 7550 4150 0    50   Input ~ 0
+FMC_D26
+Text GLabel 8750 1650 0    50   Input ~ 0
+FMC_D27
+Text GLabel 8750 2050 0    50   Input ~ 0
+SDMMC1_D2
+Text GLabel 8750 2150 0    50   Input ~ 0
+SDMMC1_D3
+Text GLabel 8750 2250 0    50   Input ~ 0
+SDMMC1_CK
+Text GLabel 8750 2350 0    50   Input ~ 0
+FMC_D2
+Text GLabel 8750 2450 0    50   Input ~ 0
+FMC_D3
+Text GLabel 8750 2550 0    50   Input ~ 0
+SDMMC1_CMD
+Text GLabel 9950 2150 0    50   Input ~ 0
+LTDC_B6
+Text GLabel 9950 2250 0    50   Input ~ 0
+LTDC_B7
+Text GLabel 9950 2450 0    50   Input ~ 0
+FMC_SDNCAS
+Text GLabel 9950 4150 0    50   Input ~ 0
+FMC_D29
+Text GLabel 9950 4050 0    50   Input ~ 0
+FMC_D28
+Text GLabel 4000 3150 0    50   Input ~ 0
+LTDC_R4
+Text GLabel 6250 2350 0    50   Input ~ 0
+TIM4_CH1
+Text GLabel 6250 2450 0    50   Input ~ 0
+TIM4_CH2
+Text GLabel 7550 3250 0    50   Input ~ 0
+DEBUG_JTMS-SWDIO
+Text GLabel 8750 1850 0    50   Input ~ 0
+DEBUG_JTCK-SWCLK
+$Comp
+L midi_studio_components:STM32H743BITx U?
+U 1 1 5CE5F1F9
+P 6950 3250
+AR Path="/5CE5F1F9" Ref="U?"  Part="1" 
+AR Path="/5CE5EAC0/5CE5F1F9" Ref="U?"  Part="1" 
+F 0 "U?" H 6389 5075 50  0000 C CNN
+F 1 "STM32H743BITx" H 6389 4984 50  0000 C CNN
+F 2 "" H 6950 3250 50  0001 C CNN
+F 3 "" H 6950 3250 50  0001 C CNN
+	1    6950 3250
+	1    0    0    -1  
+$EndComp
+Text GLabel 9950 2550 0    50   Input ~ 0
+DEBUG_JTDO-SWO
+Text GLabel 9950 3150 0    50   Input ~ 0
+UART4_RX
+Text GLabel 9950 3250 0    50   Input ~ 0
+UART4_TX
+Text GLabel 2950 2350 0    50   Input ~ 0
+NRST
+Text GLabel 1800 3050 0    50   Input ~ 0
+VDD_MCU
+Text GLabel 1800 4150 0    50   Input ~ 0
+VDD_MCU
+Text GLabel 2950 2850 0    50   Input ~ 0
+VDD_MCU
+Text GLabel 2950 4150 0    50   Input ~ 0
+VDD_MCU
+Text GLabel 4000 2250 0    50   Input ~ 0
+VDD_MCU
+Text GLabel 4000 3650 0    50   Input ~ 0
+VDD_MCU
+Text GLabel 4950 2050 0    50   Input ~ 0
+VDD_MCU
+Text GLabel 4950 3150 0    50   Input ~ 0
+VDD_MCU
+Text GLabel 4950 4050 0    50   Input ~ 0
+VDD_MCU
+Text GLabel 6250 2650 0    50   Input ~ 0
+VDD_MCU
+Text GLabel 6250 3550 0    50   Input ~ 0
+VDD_MCU
+Text GLabel 7550 3550 0    50   Input ~ 0
+VDD_MCU
+Text GLabel 8750 1750 0    50   Input ~ 0
+VDD_MCU
+Text GLabel 8750 3050 0    50   Input ~ 0
+VDD_MCU
+Text GLabel 9950 1850 0    50   Input ~ 0
+VDD_MCU
+Text GLabel 9950 3750 0    50   Input ~ 0
+VDD_MCU
+Text GLabel 2950 3150 0    50   Input ~ 0
+VDDA
+Text GLabel 2950 3050 0    50   Input ~ 0
+VREF+
+Text GLabel 1800 2150 0    50   Input ~ 0
+VBAT
+Text GLabel 1800 2450 0    50   Input ~ 0
+RCC_OSC32_IN
+Text GLabel 1800 2550 0    50   Input ~ 0
+RCC_OSC32_OUT
+Text GLabel 2950 2150 0    50   Input ~ 0
+RCC_OSC_IN
+Text GLabel 2950 2250 0    50   Input ~ 0
+RCC_OSC_OUT
+Text GLabel 2950 3550 0    50   Input ~ 0
+FMC_SDCKE0
+Text GLabel 2950 3850 0    50   Input ~ 0
+FMC_SDNWE
+Text GLabel 4000 3050 0    50   Input ~ 0
+LTDC_R3
+Text GLabel 4950 2850 0    50   Input ~ 0
+USB_OTG_HS_ULPI_D4
+Text GLabel 4950 3250 0    50   Input ~ 0
+LTDC_R6
+Text GLabel 4950 4150 0    50   Input ~ 0
+USB_OTG_HS_ULPI_D5
+Text GLabel 6250 1650 0    50   Input ~ 0
+USB_OTG_HS_ULPI_D6
+Text GLabel 6250 1750 0    50   Input ~ 0
+SPI2_MOSI
+Text GLabel 6250 3450 0    50   Input ~ 0
+LTDC_G4
+Text GLabel 6250 3850 0    50   Input ~ 0
+LTDC_G6
+Text GLabel 7550 2250 0    50   Input ~ 0
+VDD33USB
+Text GLabel 7550 2850 0    50   Input ~ 0
+SPI2_SCK
+$EndSCHEMATC
