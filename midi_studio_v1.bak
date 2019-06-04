@@ -4,8 +4,8 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
-Title "MCU"
+Sheet 1 6
+Title "MIDI Studio Schematic"
 Date ""
 Rev ""
 Comp ""
@@ -25,5 +25,23 @@ S 1750 800  500  400
 U 5CE5F83A
 F0 "mcu_power" 50
 F1 "mcu_power.sch" 50
+$EndSheet
+$Sheet
+S 2700 800  550  400 
+U 5CF5F3AC
+F0 "Crystals" 50
+F1 "xtals.sch" 50
+$EndSheet
+$Sheet
+S 3500 800  500  400 
+U 5CF60766
+F0 "Trace/Debug" 50
+F1 "trace_debug.sch" 50
+$EndSheet
+$Sheet
+S 1100 1500 500  400 
+U 5CF6FA29
+F0 "Audio CODEC" 50
+F1 "audio_codec.sch" 50
 $EndSheet
 $EndSCHEMATC

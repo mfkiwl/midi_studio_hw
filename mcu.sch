@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 3
+Sheet 2 6
 Title ""
 Date ""
 Rev ""
@@ -53,7 +53,7 @@ LTDC_DE
 Text GLabel 4150 1400 0    50   Input ~ 0
 USB_OTG_HS_ULPI_STP
 Text GLabel 4150 1600 0    50   Input ~ 0
-FMC_SDNE0
+SPI2_MISO
 Text GLabel 4150 1700 0    50   Input ~ 0
 USB_OTG_HS_ULPI_NXT
 Text GLabel 4150 2200 0    50   Input ~ 0
@@ -272,8 +272,6 @@ Text GLabel 9500 3100 0    50   Input ~ 0
 USB_OTG_HS_ULPI_D5
 Text GLabel 1500 3550 0    50   Input ~ 0
 USB_OTG_HS_ULPI_D6
-Text GLabel 1500 3650 0    50   Input ~ 0
-SPI2_MOSI
 Text GLabel 1500 5350 0    50   Input ~ 0
 LTDC_G4
 Text GLabel 1500 5750 0    50   Input ~ 0
@@ -281,7 +279,7 @@ LTDC_G6
 Text GLabel 4150 4150 0    50   Input ~ 0
 VDD33USB
 Text GLabel 4150 4750 0    50   Input ~ 0
-SPI2_SCK
+USB_OTG_FS_VBUS
 $Comp
 L midi_studio_components:STM32H743BITx U?
 U 1 1 5CE9EBEB
@@ -370,6 +368,60 @@ F 3 "" H 9450 6400 50  0001 C CNN
 	8    9450 4800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9300 150  9300 100 
+Text GLabel 4150 2600 0    50   Input ~ 0
+FMC_SDNE0
+Text GLabel 6800 4550 0    50   Input ~ 0
+SPI2_SCK
+Text GLabel 6800 5550 0    50   Input ~ 0
+LTDC_B3
+Text GLabel 6800 5850 0    50   Input ~ 0
+SPI1_SCK
+Text GLabel 9350 3950 0    50   Input ~ 0
+LTDC_B5
+Text GLabel 9350 4650 0    50   Input ~ 0
+USB_OTG_HS_ULPI_D7
+Text GLabel 9350 4950 0    50   Input ~ 0
+BOOT0
+Text GLabel 4150 1500 0    50   Input ~ 0
+SPI2_MOSI
+Text GLabel 9350 5550 0    50   Input ~ 0
+MCU_PDR_ON
+Text GLabel 1500 1900 0    50   Input ~ 0
+MCU_VSS
+Text GLabel 1500 3000 0    50   Input ~ 0
+MCU_VSS
+Text GLabel 4150 1900 0    50   Input ~ 0
+MCU_VSS
+Text GLabel 4150 3000 0    50   Input ~ 0
+MCU_VSS
+Text GLabel 6800 1300 0    50   Input ~ 0
+MCU_VSS
+Text GLabel 6800 2500 0    50   Input ~ 0
+MCU_VSS
+Text GLabel 9500 900  0    50   Input ~ 0
+MCU_VSS
+Text GLabel 9500 2000 0    50   Input ~ 0
+MCU_VSS
+Text GLabel 1500 4450 0    50   Input ~ 0
+MCU_VSS
+Text GLabel 1500 5550 0    50   Input ~ 0
+MCU_VSS
+Text GLabel 4150 4050 0    50   Input ~ 0
+MCU_VSS
+Text GLabel 4150 5350 0    50   Input ~ 0
+MCU_VSS
+Text GLabel 6800 4850 0    50   Input ~ 0
+MCU_VSS
+Text GLabel 9350 3650 0    50   Input ~ 0
+MCU_VSS
+Text GLabel 9350 5450 0    50   Input ~ 0
+MCU_VSS
+Text GLabel 1500 700  0    50   Input ~ 0
+SAI1_SD_B
+Text GLabel 4150 800  0    50   Input ~ 0
+SAI1_SCK_B
+Text GLabel 9500 1900 0    50   Input ~ 0
+MCU_VCAP
+Text GLabel 6800 1000 0    50   Input ~ 0
+ACODEC_SPI_CS
 $EndSCHEMATC
