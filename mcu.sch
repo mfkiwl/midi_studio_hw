@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 6
+Sheet 2 7
 Title ""
 Date ""
 Rev ""
@@ -436,4 +436,12 @@ Text GLabel 6800 1600 0    50   Input ~ 0
 ACODEC_OVF
 Text GLabel 6800 1900 0    50   Input ~ 0
 ACODEC_ZERO
+Text GLabel 9350 5250 0    50   Input ~ 0
+FMC_NBL0
+Text GLabel 9350 5350 0    50   Input ~ 0
+FMC_NBL1
+Text GLabel 9350 5750 0    50   Input ~ 0
+FMC_NBL2
+Text GLabel 9350 5850 0    50   Input ~ 0
+FMC_NBL3
 $EndSCHEMATC
