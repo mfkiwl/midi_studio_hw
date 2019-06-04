@@ -424,4 +424,16 @@ Text GLabel 9500 1900 0    50   Input ~ 0
 MCU_VCAP
 Text GLabel 6800 1000 0    50   Input ~ 0
 ACODEC_SPI_CS
+Text GLabel 1500 600  0    50   Input ~ 0
+SAI1_MCLK_A
+Text GLabel 1500 4150 0    50   Input ~ 0
+SAI2_SD_A
+Text GLabel 6800 5750 0    50   Input ~ 0
+SAI2_SD_B
+Text GLabel 6800 1100 0    50   Input ~ 0
+ACODEC_RST
+Text GLabel 6800 1600 0    50   Input ~ 0
+ACODEC_OVF
+Text GLabel 6800 1900 0    50   Input ~ 0
+ACODEC_ZERO
 $EndSCHEMATC

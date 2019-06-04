@@ -42,7 +42,7 @@ F 3 "~" H 3100 3100 50  0001 C CNN
 $EndComp
 Connection ~ 3100 2950
 Wire Wire Line
-	3100 2950 4300 2950
+	3100 2950 3250 2950
 Wire Wire Line
 	3100 3250 2700 3250
 Wire Wire Line
@@ -60,25 +60,16 @@ Text GLabel 2350 4150 0    50   Input ~ 0
 $Comp
 L Device:C C?
 U 1 1 5CF703BE
-P 3000 4000
-F 0 "C?" H 2885 4046 50  0000 R CNN
-F 1 "1uF" H 2885 3955 50  0000 R CNN
-F 2 "" H 3038 3850 50  0001 C CNN
-F 3 "~" H 3000 4000 50  0001 C CNN
-	1    3000 4000
+P 2800 4000
+F 0 "C?" H 2685 4046 50  0000 R CNN
+F 1 "1uF" H 2685 3955 50  0000 R CNN
+F 2 "" H 2838 3850 50  0001 C CNN
+F 3 "~" H 2800 4000 50  0001 C CNN
+	1    2800 4000
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	3300 4150 3300 3950
-Wire Wire Line
-	3300 3950 4300 3950
-Wire Wire Line
-	2350 4150 3000 4150
-Connection ~ 3000 4150
-Wire Wire Line
-	3000 3850 4300 3850
-Wire Wire Line
-	3000 4150 3300 4150
+	2350 4150 2800 4150
 Text GLabel 6400 1450 1    50   Input ~ 0
 +5V_ANA
 Text Notes 8850 1000 2    50   ~ 0
@@ -104,7 +95,7 @@ Wire Wire Line
 Wire Wire Line
 	6100 1850 6300 1850
 Wire Wire Line
-	6300 1850 6300 2350
+	6300 1850 6300 2200
 $Comp
 L Device:CP1 C?
 U 1 1 5CF728B9
@@ -171,16 +162,14 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 5CF78BDA
-P 4850 1500
-F 0 "#PWR?" H 4850 1250 50  0001 C CNN
-F 1 "GND" H 4855 1327 50  0000 C CNN
-F 2 "" H 4850 1500 50  0001 C CNN
-F 3 "" H 4850 1500 50  0001 C CNN
-	1    4850 1500
+P 4750 1500
+F 0 "#PWR?" H 4750 1250 50  0001 C CNN
+F 1 "GND" H 4755 1327 50  0000 C CNN
+F 2 "" H 4750 1500 50  0001 C CNN
+F 3 "" H 4750 1500 50  0001 C CNN
+	1    4750 1500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5150 1500 4850 1500
 $Comp
 L power:GND #PWR?
 U 1 1 5CF78E7B
@@ -219,7 +208,7 @@ F 3 "~" H 8500 4200 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	7000 4350 8500 4350
+	7000 4350 7100 4350
 Wire Wire Line
 	8500 4050 8100 4050
 Wire Wire Line
@@ -266,8 +255,105 @@ Wire Wire Line
 	8150 3150 7000 3150
 Wire Wire Line
 	8150 3350 7000 3350
-Text GLabel 8150 3550 2    50   Input ~ 0
-SAI1_FS_A
 Wire Wire Line
 	8150 3550 7000 3550
+Text Notes 2250 1300 2    50   ~ 0
+TODO: Where are the bit and LR clocks??
+Wire Wire Line
+	4750 1500 5150 1500
+Text GLabel 7200 2600 1    50   Input ~ 0
++3V3
+Wire Wire Line
+	7200 2600 7200 2850
+Wire Wire Line
+	7200 2850 7000 2850
+Text Notes 7150 2300 0    50   ~ 0
+MODE tied to VDD to select SPI interface for control
+Text GLabel 4050 3350 0    50   Input ~ 0
+SAI1_FS_A
+Text GLabel 4050 3450 0    50   Input ~ 0
+SAI1_SCK_A
+Text GLabel 7550 3950 2    50   Input ~ 0
+SAI1_SD_A
+Text GLabel 7550 3850 2    50   Input ~ 0
+SAI1_SD_B
+Text GLabel 8150 3550 2    50   Input ~ 0
+SAI1_MCLK_A
+Wire Wire Line
+	4050 3350 4300 3350
+Wire Wire Line
+	4050 3450 4300 3450
+Text GLabel 7550 4150 2    50   Input ~ 0
+SAI1_FS_A
+Text GLabel 7550 4050 2    50   Input ~ 0
+SAI1_SCK_A
+Wire Wire Line
+	7550 4150 7000 4150
+Wire Wire Line
+	7550 4050 7000 4050
+Wire Wire Line
+	7550 3950 7000 3950
+Wire Wire Line
+	7550 3850 7000 3850
+Text GLabel 4050 3550 0    50   Input ~ 0
+SAI2_SD_A
+Text GLabel 4050 3650 0    50   Input ~ 0
+SAI2_SD_B
+Wire Wire Line
+	4050 3550 4300 3550
+Wire Wire Line
+	4050 3650 4300 3650
+Text GLabel 4050 3150 0    50   Input ~ 0
+ACODEC_RST
+Wire Wire Line
+	4050 3150 4300 3150
+Text GLabel 4050 3250 0    50   Input ~ 0
+ACODEC_OVF
+Wire Wire Line
+	4050 3250 4300 3250
+Text GLabel 4050 4050 0    50   Input ~ 0
+ACODEC_ZERO
+Wire Wire Line
+	4050 4050 4300 4050
+Wire Wire Line
+	2800 3850 3250 3850
+Wire Wire Line
+	3100 3950 3100 4150
+Wire Wire Line
+	3100 4150 2800 4150
+Wire Wire Line
+	3100 3950 4300 3950
+Connection ~ 2800 4150
+Wire Wire Line
+	3250 2950 3250 3850
+Connection ~ 3250 2950
+Wire Wire Line
+	3250 2950 4300 2950
+Connection ~ 3250 3850
+Wire Wire Line
+	3250 3850 4300 3850
+Wire Wire Line
+	3250 3850 3250 4600
+Wire Wire Line
+	3250 4600 3400 4600
+Connection ~ 3400 4600
+Wire Wire Line
+	3250 4600 3250 4900
+Wire Wire Line
+	3250 4900 7100 4900
+Wire Wire Line
+	7100 4900 7100 4350
+Connection ~ 3250 4600
+Connection ~ 7100 4350
+Wire Wire Line
+	7100 4350 8500 4350
+Wire Wire Line
+	3250 2950 3250 2200
+Wire Wire Line
+	3250 2200 6300 2200
+Connection ~ 6300 2200
+Wire Wire Line
+	6300 2200 6300 2350
+Text Notes 3900 5100 0    50   ~ 0
+Connect all grounds directly to one another beneath the part.\nConnect this ground to analog ground of application.
 $EndSCHEMATC
