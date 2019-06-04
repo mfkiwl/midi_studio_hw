@@ -1,0 +1,101 @@
+Make a way to record a sequence and store it.
+The sequence can then be played with optional augmentations:
+    - ornamentation of each note with another sequence
+    - transformations of sequence:
+        - inversion
+        - mapping to scale, chords
+        - harmonization
+        - retrograde
+    - cutting out of sequence and resequencing:
+        - mode where you select a part of a sequence by audition
+        - this part can be saved and used as another sequence
+
+Code elements needed to acheive this:
+    - scheduler (probs a min-heap whose top value is compared with the current time)
+        - "event" objects can be placed into this scheduler
+    - a way to play event objects:
+        - midi events sent to midi port
+        - audio control events sent to some kind of controller relaying to audio
+          objects (sample-players, effects, etc.)
+        - alternatively, the common control could be MIDI and you have a port
+          that sends messages out of the device, and another that sends them to
+          local audio control
+    - universal edits of some kinds of event types:
+        - e.g., MIDI stream is parsed into note events (note-on note-off)
+        - but you might want to have sample-accurate audio event playback 
+            (playback-start, playback-end)
+        - say you cut out some section of MIDI notes and audio events, the audio
+          events should be split by putting a note-off event, while the audio
+          events should be played for a shorter time
+        - this really means there should be a more universal kind of event that is converted accordingly
+
+universal events:
+events are like dictionaries with keys indicating a parameter and a value associated with the parameter.
+    - e.g., there could be a key called "pitch-midi-semitones" which is the pitch in
+      semitones, a MIDI event would know how to translate this into a pitch for a
+      note-on / note-off event, an audio-event commanding the sample player would know
+      how to convert this into the playback speed for the sample-player, say.
+    - another example is event length. There could be a key
+      "event-length-seconds" which can be manipulated easily. Then the sample
+      player might convert this into samples while the midi event
+      pulses-per-quarter (say).
+
+plan of action:
+    - sequencer
+        - universal events
+    - midi in / out hardware / firmware
+        - midi events in and out of sequencer
+    - audio objects
+        - sample player
+        - synthesizers
+    - sequencer controls:
+        - start / stop recording
+        - copy / paste parts of recordings
+        - store recall recordings
+        - apply augmentations / ornamentations to recordings
+            - their design...
+    - hardware
+        - audio codec, buffering of input / output
+            - audio 
+            - voltage control
+        - MCU
+        - UART / MIDI, opto coupler, logic buffer
+        - SD card
+        - USB connectivity (software updates, move files to/from computer)
+        - control
+            - button
+            - knob
+            - pad
+            - breath
+        - screen, but I don't want a nuts screen, just something simple
+
+FreeRTOS / Linux / Bare-metal debate
+    - remember: we only have 1 core
+    - what kind of multi-threading do we need that can't be handled with DMA?
+        - SD card read / writes
+            - if read operation can easily find out how much needs to be read,
+              then DMA can be used. Write is even easier, assuming there's
+              enough space on the SD card.
+            - basically some request is made to read, then we just wait until
+              the file shows up.
+            - of course this only works if the file will fit in memory, the
+              alternative is streaming from the SD card, which actually works
+              similarly, just the read pointer needs advancing. But this
+              streaming probably doesn't work well for multiple files, so we
+              might decide on this not being possible (e.g., sounds we want to
+              play must be in RAM which is sensible).
+        - LCD / TFT display
+            - but this can also be done with DMA, so long as preparing the data
+              is not expensive (and I think there's even the DMA2D peripheral,
+              which will only write to areas needing updating)
+    - thread priorities
+        - the most important thread would be the one that swaps the DMA
+          read/write pointers
+            - we could do the audio processing here like in the 856 so that it
+              is highest priority
+        - the next most important would be one updating the display
+        - then one dealing with the SD card
+    - say we had multiple cores, how would the threading architecture look?
+        - we could still just have 1 thread dedicated to audio
+            - or multiple threads to get better throughput, assuming the cores
+              are available, but how to deal with this?

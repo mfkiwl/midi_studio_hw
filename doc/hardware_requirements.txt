@@ -1,0 +1,55 @@
+Hardware requirements: what needs to be available on the board
+
+CODEC
+    - at least stereo input and output
+    - needs SPI for configuration
+
+encoder
+    - 12 or 24 ppr
+    - maybe a push button integrated
+    - strategy is to have interrupt that checks to see how far encoder has gone
+      since last time, adds this to a big counter (e.g., 64 bit) and resets the
+      hardware counter
+
+serial monitor (for debugging)
+    - UART
+
+MIDI IN
+    - UART
+
+MIDI OUT
+    - UART
+
+display
+    - TFT interface or SPI
+    - 240x320
+    - monochrome or color (seems color is the same price)
+
+RAM
+    - SDRAM
+
+SD Card
+    - SDIO
+    - it would be nice to be able to access the SD card over USB, without having
+      to remove it etc. but easiest might just be to use a chip dedicated to
+      this purpose and have some kind of start up sequence select the chip
+      instead of the micro controller
+        - we hope it will be sufficient to hold the SD card <-> USB chip in
+          power down and enable the USB pins on the microcontroller to allow
+          communication with the micro and disable the USB peripheral / SDIO
+          peripheral and the input pins on the microcontroller and enable the SD
+          card <-> USB chip to allow communication with the chip
+        - it seems to have pins on micro ignore input signals, you set them in
+          analog mode
+        - if this doesn't work we will need to use an AND gate I guess
+
+USB
+    - Dfuse selectable with certain start up sequence (plug in USB before
+      plugging in power)
+    - eventually would be nice to:
+        - have device be class compliant USB audio / MIDI device
+        - perhaps allow some configuration from the computer
+
+DEBUG
+    - SW debug with asynchronous trace
+    - compatible with ST discovery boards
