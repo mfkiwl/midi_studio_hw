@@ -14,62 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 3450 1600 2    50   Input ~ 0
-LCD_VDD
-Text GLabel 2600 1600 0    50   Input ~ 0
-+3V3
-Wire Wire Line
-	2600 1600 2750 1600
-$Comp
-L power:GND #PWR?
-U 1 1 5CFECF09
-P 3000 1900
-AR Path="/5CFEB435/5CFECF09" Ref="#PWR?"  Part="1" 
-AR Path="/5CFEBF88/5CFECF09" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3000 1650 50  0001 C CNN
-F 1 "GND" H 3005 1727 50  0000 C CNN
-F 2 "" H 3000 1900 50  0001 C CNN
-F 3 "" H 3000 1900 50  0001 C CNN
-	1    3000 1900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5CFECF0F
-P 2750 1750
-AR Path="/5CFEB435/5CFECF0F" Ref="C?"  Part="1" 
-AR Path="/5CFEBF88/5CFECF0F" Ref="C?"  Part="1" 
-F 0 "C?" H 2865 1796 50  0000 L CNN
-F 1 "100nF" H 2865 1705 50  0000 L CNN
-F 2 "" H 2788 1600 50  0001 C CNN
-F 3 "~" H 2750 1750 50  0001 C CNN
-	1    2750 1750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP1 C?
-U 1 1 5CFECF16
-P 3200 1750
-AR Path="/5CFEB435/5CFECF16" Ref="C?"  Part="1" 
-AR Path="/5CFEBF88/5CFECF16" Ref="C?"  Part="1" 
-F 0 "C?" H 3315 1796 50  0000 L CNN
-F 1 "4.7uF" H 3315 1705 50  0000 L CNN
-F 2 "" H 3200 1750 50  0001 C CNN
-F 3 "~" H 3200 1750 50  0001 C CNN
-	1    3200 1750
-	1    0    0    -1  
-$EndComp
-Connection ~ 3200 1600
-Wire Wire Line
-	3200 1600 3450 1600
-Wire Wire Line
-	3000 1900 3200 1900
-Connection ~ 3000 1900
-Connection ~ 2750 1600
-Wire Wire Line
-	2750 1600 3200 1600
-Wire Wire Line
-	2750 1900 3000 1900
 $Comp
 L midi_studio_components:DTO24CTFT U?
 U 1 1 5CFF09B3
@@ -96,7 +40,7 @@ L midi_studio_components:Conn_01x45 U?
 U 1 1 5CFFF767
 P 7600 2950
 F 0 "U?" H 7645 2915 50  0000 C CNN
-F 1 "TFT_Connector" H 7645 2824 50  0000 C CNN
+F 1 "Connector_to_DTO24CTFT" H 7645 2824 50  0000 C CNN
 F 2 "" H 7600 2950 50  0001 C CNN
 F 3 "" H 7600 2950 50  0001 C CNN
 	1    7600 2950
@@ -192,28 +136,6 @@ LCD_VDD
 NoConn ~ 5450 3350
 $Comp
 L Jumper:SolderJumper_2_Open JP?
-U 1 1 5CFFFDD8
-P 3750 3800
-F 0 "JP?" V 3750 3868 50  0000 L CNN
-F 1 "~" V 3795 3868 50  0000 L CNN
-F 2 "" H 3750 3800 50  0001 C CNN
-F 3 "~" H 3750 3800 50  0001 C CNN
-	1    3750 3800
-	0    1    1    0   
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP?
-U 1 1 5CFFFE8F
-P 4050 3800
-F 0 "JP?" V 4050 3868 50  0000 L CNN
-F 1 "~" V 4095 3868 50  0000 L CNN
-F 2 "" H 4050 3800 50  0001 C CNN
-F 3 "~" H 4050 3800 50  0001 C CNN
-	1    4050 3800
-	0    1    1    0   
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP?
 U 1 1 5CFFFEB7
 P 4300 3800
 F 0 "JP?" V 4300 3868 50  0000 L CNN
@@ -223,25 +145,6 @@ F 3 "~" H 4300 3800 50  0001 C CNN
 	1    4300 3800
 	0    1    1    0   
 $EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP?
-U 1 1 5CFFFEDD
-P 4600 3800
-F 0 "JP?" V 4600 3868 50  0000 L CNN
-F 1 "~" V 4645 3868 50  0000 L CNN
-F 2 "" H 4600 3800 50  0001 C CNN
-F 3 "~" H 4600 3800 50  0001 C CNN
-	1    4600 3800
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3550 3650 3750 3650
-Connection ~ 3750 3650
-Wire Wire Line
-	3750 3650 4050 3650
-Connection ~ 4050 3650
-Wire Wire Line
-	4050 3650 4300 3650
 Connection ~ 4300 3650
 Wire Wire Line
 	4300 3650 4600 3650
@@ -291,17 +194,6 @@ F 3 "~" H 4050 4700 50  0001 C CNN
 $EndComp
 $Comp
 L Jumper:SolderJumper_2_Open JP?
-U 1 1 5D00155C
-P 4300 4700
-F 0 "JP?" V 4300 4768 50  0000 L CNN
-F 1 "~" V 4345 4768 50  0000 L CNN
-F 2 "" H 4300 4700 50  0001 C CNN
-F 3 "~" H 4300 4700 50  0001 C CNN
-	1    4300 4700
-	0    1    -1   0   
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP?
 U 1 1 5D001563
 P 4600 4700
 F 0 "JP?" V 4600 4768 50  0000 L CNN
@@ -317,11 +209,6 @@ Connection ~ 3750 4850
 Wire Wire Line
 	3750 4850 4050 4850
 Connection ~ 4050 4850
-Wire Wire Line
-	4050 4850 4300 4850
-Connection ~ 4300 4850
-Wire Wire Line
-	4300 4850 4600 4850
 $Comp
 L power:GND #PWR?
 U 1 1 5D002170
@@ -344,9 +231,8 @@ Wire Wire Line
 Connection ~ 4300 4000
 Wire Wire Line
 	4600 3950 4600 4550
-Connection ~ 4600 3950
 Text Notes 3200 3500 0    50   ~ 0
-choose interface type.\nin the future will be hard wired.
+Choose 3-wire 9-bit serial interface \nwith separate SDI and SDO pins.\nIn the future will be hard wired.
 Text GLabel 5950 3350 3    50   Input ~ 0
 LTDC_RESET
 Text GLabel 6150 3350 3    50   Input ~ 0
@@ -357,4 +243,156 @@ Text GLabel 6250 3350 3    50   Input ~ 0
 LTDC_CLK
 Text GLabel 6350 3350 3    50   Input ~ 0
 LTDC_DE
+$Comp
+L power:GND #PWR?
+U 1 1 5CFFF432
+P 6950 3800
+F 0 "#PWR?" H 6950 3550 50  0001 C CNN
+F 1 "GND" H 6955 3627 50  0000 C CNN
+F 2 "" H 6950 3800 50  0001 C CNN
+F 3 "" H 6950 3800 50  0001 C CNN
+	1    6950 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 3800 6950 3350
+Text GLabel 6450 3350 3    50   Input ~ 0
+LTDC_R7
+Text GLabel 6550 3350 3    50   Input ~ 0
+LTDC_R6
+Text GLabel 6650 3350 3    50   Input ~ 0
+LTDC_R5
+Text GLabel 6750 3350 3    50   Input ~ 0
+LTDC_R4
+Text GLabel 6850 3350 3    50   Input ~ 0
+LTDC_R3
+Text GLabel 7050 3350 3    50   Input ~ 0
+LTDC_G7
+Text GLabel 7150 3350 3    50   Input ~ 0
+LTDC_G6
+Text GLabel 7250 3350 3    50   Input ~ 0
+LTDC_G5
+Text GLabel 7350 3350 3    50   Input ~ 0
+LTDC_G4
+Text GLabel 7450 3350 3    50   Input ~ 0
+LTDC_G3
+Text GLabel 7550 3350 3    50   Input ~ 0
+LTDC_G2
+Text GLabel 7650 3350 3    50   Input ~ 0
+LTDC_B7
+Text GLabel 7750 3350 3    50   Input ~ 0
+LTDC_B6
+Text GLabel 7850 3350 3    50   Input ~ 0
+LTDC_B5
+Text GLabel 7950 3350 3    50   Input ~ 0
+LTDC_B4
+Text GLabel 8050 3350 3    50   Input ~ 0
+LTDC_B3
+NoConn ~ 8850 3350
+Text GLabel 8950 3450 3    50   Input ~ 0
+LCD_VDD
+Wire Wire Line
+	8950 3350 8950 3400
+Wire Wire Line
+	8950 3400 9050 3400
+Wire Wire Line
+	9050 3400 9050 3350
+Connection ~ 8950 3400
+Wire Wire Line
+	8950 3400 8950 3450
+Text GLabel 8750 3350 3    50   Input ~ 0
+LTDC_CS
+Text Notes 8650 4350 0    50   ~ 0
+Display has to be initialized by sending commands via SPI.\nUse LTDC_CS to select this chip on the bus.
+$Comp
+L power:GND #PWR?
+U 1 1 5D007F92
+P 8650 3950
+F 0 "#PWR?" H 8650 3700 50  0001 C CNN
+F 1 "GND" H 8655 3777 50  0000 C CNN
+F 2 "" H 8650 3950 50  0001 C CNN
+F 3 "" H 8650 3950 50  0001 C CNN
+	1    8650 3950
+	1    0    0    -1  
+$EndComp
+Text GLabel 8250 3350 3    50   Input ~ 0
+SPI1_MISO
+Text GLabel 8350 3350 3    50   Input ~ 0
+SPI1_MOSI
+Text GLabel 8550 3350 3    50   Input ~ 0
+SPI1_SCK
+Wire Wire Line
+	8650 3350 8650 3850
+Wire Wire Line
+	8150 3350 8150 3850
+Wire Wire Line
+	8150 3850 8450 3850
+Connection ~ 8650 3850
+Wire Wire Line
+	8650 3850 8650 3950
+Wire Wire Line
+	8450 3350 8450 3850
+Connection ~ 8450 3850
+Wire Wire Line
+	8450 3850 8650 3850
+Wire Wire Line
+	3550 3650 3750 3650
+$Comp
+L Jumper:SolderJumper_2_Bridged JP?
+U 1 1 5D00F593
+P 3750 3800
+F 0 "JP?" V 3750 3868 50  0000 L CNN
+F 1 "~" V 3795 3868 50  0000 L CNN
+F 2 "" H 3750 3800 50  0001 C CNN
+F 3 "~" H 3750 3800 50  0001 C CNN
+	1    3750 3800
+	0    1    1    0   
+$EndComp
+Connection ~ 3750 3650
+Wire Wire Line
+	3750 3650 4050 3650
+$Comp
+L Jumper:SolderJumper_2_Bridged JP?
+U 1 1 5D00FECF
+P 4050 3800
+F 0 "JP?" V 4050 3868 50  0000 L CNN
+F 1 "~" V 4095 3868 50  0000 L CNN
+F 2 "" H 4050 3800 50  0001 C CNN
+F 3 "~" H 4050 3800 50  0001 C CNN
+	1    4050 3800
+	0    1    1    0   
+$EndComp
+Connection ~ 4050 3650
+Wire Wire Line
+	4050 3650 4300 3650
+Wire Wire Line
+	4050 4850 4300 4850
+$Comp
+L Jumper:SolderJumper_2_Bridged JP?
+U 1 1 5D00FF11
+P 4300 4700
+F 0 "JP?" V 4300 4768 50  0000 L CNN
+F 1 "~" V 4345 4768 50  0000 L CNN
+F 2 "" H 4300 4700 50  0001 C CNN
+F 3 "~" H 4300 4700 50  0001 C CNN
+	1    4300 4700
+	0    1    1    0   
+$EndComp
+Connection ~ 4300 4850
+Wire Wire Line
+	4300 4850 4600 4850
+$Comp
+L Jumper:SolderJumper_2_Bridged JP?
+U 1 1 5D00FF77
+P 4600 3800
+F 0 "JP?" V 4600 3868 50  0000 L CNN
+F 1 "~" V 4645 3868 50  0000 L CNN
+F 2 "" H 4600 3800 50  0001 C CNN
+F 3 "~" H 4600 3800 50  0001 C CNN
+	1    4600 3800
+	0    1    1    0   
+$EndComp
+Connection ~ 4600 3950
+Text Notes 7600 4650 0    50   ~ 0
+Display power supply
 $EndSCHEMATC

@@ -446,4 +446,6 @@ Text GLabel 9350 5850 0    50   Input ~ 0
 FMC_NBL3
 Text GLabel 4150 4350 0    50   Input ~ 0
 SD_DET
+Text GLabel 4150 4250 0    50   Input ~ 0
+LTDC_RESET
 $EndSCHEMATC
