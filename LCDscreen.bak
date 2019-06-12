@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 9
+Sheet 9 10
 Title ""
 Date ""
 Rev ""
@@ -393,4 +393,6 @@ F 3 "~" H 4600 3800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Connection ~ 4600 3950
+Text Notes 7600 4650 0    50   ~ 0
+Display power supply
 $EndSCHEMATC

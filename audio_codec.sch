@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 9
+Sheet 6 10
 Title ""
 Date ""
 Rev ""
@@ -216,8 +216,8 @@ Wire Wire Line
 	8150 3350 7000 3350
 Wire Wire Line
 	8150 3550 7000 3550
-Text Notes 2250 1300 2    50   ~ 0
-TODO: Where are the bit and LR clocks??
+Text Notes 3200 1300 2    50   ~ 0
+Bit clock is SCK (serial clock) and LR clock is FS (frame select)
 Text GLabel 7500 2600 1    50   Input ~ 0
 +3V3
 Text Notes 7600 2400 0    50   ~ 0
@@ -504,4 +504,7 @@ Wire Wire Line
 	5000 4800 5000 5050
 Wire Wire Line
 	4900 4800 4900 5050
+Wire Wire Line
+	6400 1050 6400 1100
+Connection ~ 6400 1100
 $EndSCHEMATC
