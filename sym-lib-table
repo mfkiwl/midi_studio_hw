@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name midi_studio_components)(type Legacy)(uri ${KIPRJMOD}/midi_studio_components.lib)(options "")(descr ""))
   (lib (name midi_studio_v1-rescue)(type Legacy)(uri ${KIPRJMOD}/midi_studio_v1-rescue.lib)(options "")(descr ""))
+  (lib (name contrib_connectors)(type Legacy)(uri ${KIPRJMOD}/../common_pcb_components/kicad/contrib_connectors.lib)(options "")(descr ""))
 )

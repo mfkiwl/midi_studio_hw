@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 10
+Sheet 1 12
 Title "MIDI Studio Schematic"
 Date ""
 Rev ""
@@ -67,5 +67,17 @@ S 1100 2200 700  450
 U 5D016BA4
 F0 "MIDI" 50
 F1 "MIDI.sch" 50
+$EndSheet
+$Sheet
+S 2100 2200 600  400 
+U 5D029A6C
+F0 "USB" 50
+F1 "USB.sch" 50
+$EndSheet
+$Sheet
+S 2900 2200 700  400 
+U 5D034219
+F0 "Encoder" 50
+F1 "encoder.sch" 50
 $EndSheet
 $EndSCHEMATC
