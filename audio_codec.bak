@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 11
+Sheet 6 13
 Title ""
 Date ""
 Rev ""
@@ -51,7 +51,7 @@ Connection ~ 3100 3250
 Wire Wire Line
 	3300 3250 3300 3050
 Wire Wire Line
-	3300 3050 4300 3050
+	3300 3050 4200 3050
 Wire Wire Line
 	2700 3250 2350 3250
 Connection ~ 2700 3250
@@ -68,8 +68,6 @@ F 3 "~" H 2800 4000 50  0001 C CNN
 	1    2800 4000
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	2350 4150 2800 4150
 Text GLabel 6400 1050 1    50   Input ~ 0
 +5V_ANA
 Text Notes 8850 600  2    50   ~ 0
@@ -147,12 +145,12 @@ Wire Wire Line
 $Comp
 L Device:CP1 C?
 U 1 1 5CF79200
-P 3900 4400
-F 0 "C?" H 3785 4446 50  0000 R CNN
-F 1 "10uF" H 3785 4355 50  0000 R CNN
-F 2 "" H 3900 4400 50  0001 C CNN
-F 3 "~" H 3900 4400 50  0001 C CNN
-	1    3900 4400
+P 3900 4900
+F 0 "C?" H 3785 4946 50  0000 R CNN
+F 1 "10uF" H 3785 4855 50  0000 R CNN
+F 2 "" H 3900 4900 50  0001 C CNN
+F 3 "~" H 3900 4900 50  0001 C CNN
+	1    3900 4900
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
@@ -173,7 +171,7 @@ Wire Wire Line
 Wire Wire Line
 	8100 4050 8100 4250
 Wire Wire Line
-	8100 4250 7000 4250
+	8100 4250 7200 4250
 $Comp
 L Device:C C?
 U 1 1 5CF7BF89
@@ -188,16 +186,9 @@ $EndComp
 Wire Wire Line
 	3900 4250 4300 4250
 Wire Wire Line
-	4300 4600 3900 4600
-Wire Wire Line
-	3900 4600 3900 4550
-Wire Wire Line
-	4300 4150 3400 4150
+	4300 4150 4200 4150
 Wire Wire Line
 	3400 4450 3400 4600
-Wire Wire Line
-	3400 4600 3900 4600
-Connection ~ 3900 4600
 Text GLabel 8150 3250 2    50   Input ~ 0
 SPI1_MISO
 Wire Wire Line
@@ -292,8 +283,6 @@ Wire Wire Line
 Connection ~ 3400 4600
 Wire Wire Line
 	3250 2950 3250 2200
-Wire Wire Line
-	3250 2200 6300 2200
 Connection ~ 6300 2200
 Wire Wire Line
 	6300 2200 6300 2350
@@ -311,8 +300,6 @@ Wire Wire Line
 	7100 2200 7100 2950
 Connection ~ 7100 4350
 Wire Wire Line
-	7100 4350 8500 4350
-Wire Wire Line
 	7000 2950 7100 2950
 Connection ~ 7100 2950
 Wire Wire Line
@@ -329,7 +316,7 @@ F 3 "~" H 8150 2850 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	7000 3050 8150 3050
+	7000 3050 7300 3050
 Wire Wire Line
 	8150 3050 8150 3000
 Wire Wire Line
@@ -361,21 +348,7 @@ NoConn ~ 7000 3650
 NoConn ~ 7000 3750
 NoConn ~ 4300 3750
 Wire Wire Line
-	5300 1250 5300 2350
-Wire Wire Line
-	5400 1250 5400 2350
-$Comp
-L power:GND #PWR?
-U 1 1 5CF95CCF
-P 3250 4600
-F 0 "#PWR?" H 3250 4350 50  0001 C CNN
-F 1 "GND" H 3255 4427 50  0000 C CNN
-F 2 "" H 3250 4600 50  0001 C CNN
-F 3 "" H 3250 4600 50  0001 C CNN
-	1    3250 4600
-	1    0    0    -1  
-$EndComp
-Connection ~ 3250 4600
+	5300 1250 5300 2200
 Wire Wire Line
 	5550 950  5150 950 
 Connection ~ 5150 950 
@@ -387,7 +360,7 @@ Connection ~ 3250 2200
 Text GLabel 6200 2100 1    50   Input ~ 0
 ACODEC_VIN1-
 Wire Wire Line
-	6400 1100 6400 2350
+	6400 1100 6400 2300
 Wire Wire Line
 	6100 1100 6100 1250
 Wire Wire Line
@@ -507,4 +480,66 @@ Wire Wire Line
 Wire Wire Line
 	6400 1050 6400 1100
 Connection ~ 6400 1100
+Wire Wire Line
+	7300 3050 7300 5850
+Wire Wire Line
+	7300 5850 3100 5850
+Wire Wire Line
+	3100 5850 3100 4150
+Connection ~ 7300 3050
+Wire Wire Line
+	7300 3050 8150 3050
+Connection ~ 3100 4150
+Wire Wire Line
+	4200 2300 4200 3050
+Connection ~ 6400 2300
+Wire Wire Line
+	6400 2300 6400 2350
+Connection ~ 4200 3050
+Wire Wire Line
+	4200 3050 4300 3050
+Wire Wire Line
+	4200 3050 4200 4150
+Connection ~ 4200 4150
+Wire Wire Line
+	4200 4150 3400 4150
+Wire Wire Line
+	7200 4250 7200 2300
+Wire Wire Line
+	7200 2300 6400 2300
+Connection ~ 7200 4250
+Wire Wire Line
+	7200 4250 7000 4250
+Wire Wire Line
+	5400 2300 4200 2300
+Wire Wire Line
+	5300 2200 5300 2350
+Wire Wire Line
+	6400 2300 5400 2300
+Wire Wire Line
+	5400 1250 5400 2200
+Wire Wire Line
+	5400 2200 5400 2350
+Wire Wire Line
+	3250 2200 6300 2200
+Wire Wire Line
+	3400 4600 4300 4600
+Wire Wire Line
+	3900 4250 3900 4750
+Wire Wire Line
+	3900 5050 3900 5150
+Wire Wire Line
+	3900 5150 4700 5150
+Wire Wire Line
+	4700 5150 4700 4900
+Wire Wire Line
+	4700 4900 7100 4900
+Wire Wire Line
+	7100 4350 8500 4350
+Wire Wire Line
+	7100 4350 7100 4900
+Wire Wire Line
+	2350 4150 2800 4150
+Text GLabel 3250 4600 3    50   Input ~ 0
+AGND
 $EndSCHEMATC

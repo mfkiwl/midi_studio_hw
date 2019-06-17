@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 12
+Sheet 8 13
 Title ""
 Date ""
 Rev ""
@@ -25,17 +25,6 @@ F 3 "" H 5550 3700 60  0001 C CNN
 	1    5550 3650
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5CFE73EC
-P 7200 3300
-F 0 "#PWR?" H 7200 3050 50  0001 C CNN
-F 1 "GND" H 7205 3127 50  0000 C CNN
-F 2 "" H 7200 3300 50  0001 C CNN
-F 3 "" H 7200 3300 50  0001 C CNN
-	1    7200 3300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6300 3300 6400 3300
 Wire Wire Line
@@ -51,17 +40,6 @@ Wire Wire Line
 	4600 3300 4600 3650
 Wire Wire Line
 	4600 3650 4750 3650
-$Comp
-L power:GND #PWR?
-U 1 1 5CFE745E
-P 4400 3300
-F 0 "#PWR?" H 4400 3050 50  0001 C CNN
-F 1 "GND" H 4405 3127 50  0000 C CNN
-F 2 "" H 4400 3300 50  0001 C CNN
-F 3 "" H 4400 3300 50  0001 C CNN
-	1    4400 3300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4400 3300 4600 3300
 Connection ~ 4600 3300
@@ -81,17 +59,6 @@ Text GLabel 5500 4300 3    50   Input ~ 0
 SDMMC1_CK
 Text GLabel 5700 4300 3    50   Input ~ 0
 SDMMC1_CMD
-$Comp
-L power:GND #PWR?
-U 1 1 5CFE78C0
-P 5400 4900
-F 0 "#PWR?" H 5400 4650 50  0001 C CNN
-F 1 "GND" H 5405 4727 50  0000 C CNN
-F 2 "" H 5400 4900 50  0001 C CNN
-F 3 "" H 5400 4900 50  0001 C CNN
-	1    5400 4900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5400 4300 5400 4900
 Text GLabel 7450 4350 2    50   Input ~ 0
@@ -102,17 +69,6 @@ Text GLabel 6600 4350 0    50   Input ~ 0
 +3V3
 Wire Wire Line
 	6600 4350 6750 4350
-$Comp
-L power:GND #PWR?
-U 1 1 5CFEB0F7
-P 7000 4650
-F 0 "#PWR?" H 7000 4400 50  0001 C CNN
-F 1 "GND" H 7005 4477 50  0000 C CNN
-F 2 "" H 7000 4650 50  0001 C CNN
-F 3 "" H 7000 4650 50  0001 C CNN
-	1    7000 4650
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:C C?
 U 1 1 5CFEB1BC
@@ -138,25 +94,9 @@ $EndComp
 Connection ~ 7200 4350
 Wire Wire Line
 	7200 4350 7450 4350
-Wire Wire Line
-	7000 4650 7200 4650
-Connection ~ 7000 4650
-$Comp
-L power:GND #PWR?
-U 1 1 5CFEB709
-P 6800 3950
-F 0 "#PWR?" H 6800 3700 50  0001 C CNN
-F 1 "GND" H 6805 3777 50  0000 C CNN
-F 2 "" H 6800 3950 50  0001 C CNN
-F 3 "" H 6800 3950 50  0001 C CNN
-	1    6800 3950
-	1    0    0    -1  
-$EndComp
 Connection ~ 6750 4350
 Wire Wire Line
 	6750 4350 7200 4350
-Wire Wire Line
-	6750 4650 7000 4650
 Wire Wire Line
 	6300 3650 6800 3650
 $Comp
@@ -173,4 +113,16 @@ $EndComp
 Connection ~ 6800 3650
 Wire Wire Line
 	6800 3650 7200 3650
+Wire Wire Line
+	6750 4650 7200 4650
+Text GLabel 7200 4650 3    50   Input ~ 0
+DGND
+Text GLabel 7200 3300 2    50   Input ~ 0
+DGND
+Text GLabel 5400 4900 3    50   Input ~ 0
+DGND
+Text GLabel 4400 3300 0    50   Input ~ 0
+DGND
+Text GLabel 6800 3950 3    50   Input ~ 0
+DGND
 $EndSCHEMATC

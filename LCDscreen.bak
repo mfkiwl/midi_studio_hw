@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 11
+Sheet 9 13
 Title ""
 Date ""
 Rev ""
@@ -52,24 +52,12 @@ NoConn ~ 9650 3350
 NoConn ~ 9550 3350
 Text GLabel 9350 3350 3    50   Input ~ 0
 +9V6
-$Comp
-L power:GND #PWR?
-U 1 1 5CFFF94F
-P 9450 3700
-F 0 "#PWR?" H 9450 3450 50  0001 C CNN
-F 1 "GND" H 9455 3527 50  0000 C CNN
-F 2 "" H 9450 3700 50  0001 C CNN
-F 3 "" H 9450 3700 50  0001 C CNN
-	1    9450 3700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9450 3350 9450 3700
 Wire Wire Line
 	9250 3350 9250 3700
 Wire Wire Line
 	9250 3700 9450 3700
-Connection ~ 9450 3700
 Wire Wire Line
 	9150 3350 9150 3700
 Wire Wire Line
@@ -81,19 +69,6 @@ Text GLabel 7800 4800 0    50   Input ~ 0
 +3V3
 Wire Wire Line
 	7800 4800 7950 4800
-$Comp
-L power:GND #PWR?
-U 1 1 5CFFFAE0
-P 8200 5100
-AR Path="/5CFEB435/5CFFFAE0" Ref="#PWR?"  Part="1" 
-AR Path="/5CFEBF88/5CFFFAE0" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 8200 4850 50  0001 C CNN
-F 1 "GND" H 8205 4927 50  0000 C CNN
-F 2 "" H 8200 5100 50  0001 C CNN
-F 3 "" H 8200 5100 50  0001 C CNN
-	1    8200 5100
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:C C?
 U 1 1 5CFFFAE6
@@ -123,14 +98,9 @@ $EndComp
 Connection ~ 8400 4800
 Wire Wire Line
 	8400 4800 8650 4800
-Wire Wire Line
-	8200 5100 8400 5100
-Connection ~ 8200 5100
 Connection ~ 7950 4800
 Wire Wire Line
 	7950 4800 8400 4800
-Wire Wire Line
-	7950 5100 8200 5100
 Text GLabel 3550 3650 0    50   Input ~ 0
 LCD_VDD
 NoConn ~ 5450 3350
@@ -209,17 +179,6 @@ Connection ~ 3750 4850
 Wire Wire Line
 	3750 4850 4050 4850
 Connection ~ 4050 4850
-$Comp
-L power:GND #PWR?
-U 1 1 5D002170
-P 3550 4850
-F 0 "#PWR?" H 3550 4600 50  0001 C CNN
-F 1 "GND" H 3555 4677 50  0000 C CNN
-F 2 "" H 3550 4850 50  0001 C CNN
-F 3 "" H 3550 4850 50  0001 C CNN
-	1    3550 4850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3750 4100 3750 4550
 Connection ~ 3750 4100
@@ -243,17 +202,6 @@ Text GLabel 6250 3350 3    50   Input ~ 0
 LTDC_CLK
 Text GLabel 6350 3350 3    50   Input ~ 0
 LTDC_DE
-$Comp
-L power:GND #PWR?
-U 1 1 5CFFF432
-P 6950 3800
-F 0 "#PWR?" H 6950 3550 50  0001 C CNN
-F 1 "GND" H 6955 3627 50  0000 C CNN
-F 2 "" H 6950 3800 50  0001 C CNN
-F 3 "" H 6950 3800 50  0001 C CNN
-	1    6950 3800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6950 3800 6950 3350
 Text GLabel 6450 3350 3    50   Input ~ 0
@@ -304,17 +252,6 @@ Text GLabel 8750 3350 3    50   Input ~ 0
 LTDC_CS
 Text Notes 8650 4350 0    50   ~ 0
 Display has to be initialized by sending commands via SPI.\nUse LTDC_CS to select this chip on the bus.
-$Comp
-L power:GND #PWR?
-U 1 1 5D007F92
-P 8650 3950
-F 0 "#PWR?" H 8650 3700 50  0001 C CNN
-F 1 "GND" H 8655 3777 50  0000 C CNN
-F 2 "" H 8650 3950 50  0001 C CNN
-F 3 "" H 8650 3950 50  0001 C CNN
-	1    8650 3950
-	1    0    0    -1  
-$EndComp
 Text GLabel 8250 3350 3    50   Input ~ 0
 SPI1_MISO
 Text GLabel 8350 3350 3    50   Input ~ 0
@@ -395,4 +332,16 @@ $EndComp
 Connection ~ 4600 3950
 Text Notes 7600 4650 0    50   ~ 0
 Display power supply
+Text GLabel 9450 3700 3    50   Input ~ 0
+DGND
+Wire Wire Line
+	7950 5100 8400 5100
+Text GLabel 7950 5100 0    50   Input ~ 0
+DGND
+Text GLabel 3550 4850 0    50   Input ~ 0
+DGND
+Text GLabel 6950 3800 3    50   Input ~ 0
+DGND
+Text GLabel 8650 3950 3    50   Input ~ 0
+DGND
 $EndSCHEMATC

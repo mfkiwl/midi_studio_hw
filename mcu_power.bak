@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 11
+Sheet 3 13
 Title ""
 Date ""
 Rev ""
@@ -198,19 +198,6 @@ F 3 "~" H 7400 1300 50  0001 C CNN
 	1    7400 1300
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C C?
-U 1 1 5CE60405
-P 7850 1300
-AR Path="/5CE60405" Ref="C?"  Part="1" 
-AR Path="/5CE5F83A/5CE60405" Ref="C?"  Part="1" 
-F 0 "C?" H 7965 1346 50  0000 L CNN
-F 1 "4.7uF" H 7965 1255 50  0000 L CNN
-F 2 "" H 7888 1150 50  0001 C CNN
-F 3 "~" H 7850 1300 50  0001 C CNN
-	1    7850 1300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1350 1150 1400 1150
 Wire Wire Line
@@ -253,9 +240,6 @@ Wire Wire Line
 	7000 1150 7400 1150
 Connection ~ 7000 1150
 Wire Wire Line
-	7400 1150 7850 1150
-Connection ~ 7400 1150
-Wire Wire Line
 	1400 1450 1850 1450
 Wire Wire Line
 	1850 1450 2300 1450
@@ -293,21 +277,6 @@ Connection ~ 6450 1450
 Wire Wire Line
 	7000 1450 7400 1450
 Connection ~ 7000 1450
-Wire Wire Line
-	7400 1450 7850 1450
-Connection ~ 7400 1450
-$Comp
-L power:GND #PWR?
-U 1 1 5CE60B88
-P 1400 1450
-F 0 "#PWR?" H 1400 1200 50  0001 C CNN
-F 1 "GND" H 1405 1277 50  0000 C CNN
-F 2 "" H 1400 1450 50  0001 C CNN
-F 3 "" H 1400 1450 50  0001 C CNN
-	1    1400 1450
-	1    0    0    -1  
-$EndComp
-Connection ~ 1400 1450
 Text GLabel 1350 2400 0    50   Input ~ 0
 VDDA
 Text GLabel 1350 2100 0    50   Input ~ 0
@@ -344,63 +313,50 @@ Text Notes 1100 1950 0    50   ~ 0
 MCU Analog Power
 Text Notes 1000 950  0    50   ~ 0
 MCU VDD Decoupling capacitors
-Text Notes 1100 3850 0    50   ~ 0
-MCU Battery power (optional)
 Text GLabel 1300 3950 0    50   Input ~ 0
 +3V3
 $Comp
 L Jumper:SolderJumper_2_Bridged JP?
 U 1 1 5CE65690
-P 1600 4100
-F 0 "JP?" V 1554 4168 50  0000 L CNN
-F 1 "SolderJumper_2_Bridged" V 1645 4168 50  0000 L CNN
-F 2 "" H 1600 4100 50  0001 C CNN
-F 3 "~" H 1600 4100 50  0001 C CNN
-	1    1600 4100
-	0    1    1    0   
-$EndComp
-Text GLabel 1300 4250 0    50   Input ~ 0
-VBAT
-Wire Wire Line
-	1300 3950 1600 3950
-Wire Wire Line
-	1600 4250 1300 4250
-$Comp
-L Jumper:SolderJumper_2_Open JP?
-U 1 1 5CE67559
 P 1600 4400
 F 0 "JP?" V 1554 4468 50  0000 L CNN
-F 1 "SolderJumper_2_Open" V 1645 4468 50  0000 L CNN
+F 1 "SolderJumper_2_Bridged" V 1645 4468 50  0000 L CNN
 F 2 "" H 1600 4400 50  0001 C CNN
 F 3 "~" H 1600 4400 50  0001 C CNN
 	1    1600 4400
 	0    1    1    0   
 $EndComp
-Connection ~ 1600 4250
+Text GLabel 1300 4550 0    50   Input ~ 0
+VBAT
+Wire Wire Line
+	1300 3950 1600 3950
+Wire Wire Line
+	1600 4550 1300 4550
+$Comp
+L Jumper:SolderJumper_2_Open JP?
+U 1 1 5CE67559
+P 1600 4700
+F 0 "JP?" V 1554 4768 50  0000 L CNN
+F 1 "SolderJumper_2_Open" V 1645 4768 50  0000 L CNN
+F 2 "" H 1600 4700 50  0001 C CNN
+F 3 "~" H 1600 4700 50  0001 C CNN
+	1    1600 4700
+	0    1    1    0   
+$EndComp
+Connection ~ 1600 4550
 $Comp
 L Connector:Conn_01x02_Male J?
 U 1 1 5CE681E7
-P 1400 4550
-F 0 "J?" H 1500 4350 50  0000 C CNN
-F 1 "Conn_01x02_Male" H 1500 4200 50  0000 C CNN
-F 2 "" H 1400 4550 50  0001 C CNN
-F 3 "~" H 1400 4550 50  0001 C CNN
-	1    1400 4550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5CE68346
-P 2200 4650
-F 0 "#PWR?" H 2200 4400 50  0001 C CNN
-F 1 "GND" H 2205 4477 50  0000 C CNN
-F 2 "" H 2200 4650 50  0001 C CNN
-F 3 "" H 2200 4650 50  0001 C CNN
-	1    2200 4650
+P 1400 4850
+F 0 "J?" H 1500 4650 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 1500 4500 50  0000 C CNN
+F 2 "" H 1400 4850 50  0001 C CNN
+F 3 "~" H 1400 4850 50  0001 C CNN
+	1    1400 4850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1600 4650 2200 4650
+	1600 4950 2200 4950
 $Comp
 L Device:C C?
 U 1 1 5CF5301A
@@ -427,28 +383,6 @@ Wire Wire Line
 	1900 3150 2250 3150
 Connection ~ 1900 3150
 $Comp
-L power:GND #PWR?
-U 1 1 5CF551CB
-P 1900 3450
-F 0 "#PWR?" H 1900 3200 50  0001 C CNN
-F 1 "GND" H 1900 3300 50  0000 C CNN
-F 2 "" H 1900 3450 50  0001 C CNN
-F 3 "" H 1900 3450 50  0001 C CNN
-	1    1900 3450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5CF552C7
-P 2250 3450
-F 0 "#PWR?" H 2250 3200 50  0001 C CNN
-F 1 "GND" H 2250 3300 50  0000 C CNN
-F 2 "" H 2250 3450 50  0001 C CNN
-F 3 "" H 2250 3450 50  0001 C CNN
-	1    2250 3450
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C?
 U 1 1 5CF554E4
 P 1900 2550
@@ -473,28 +407,6 @@ $EndComp
 Wire Wire Line
 	1900 2400 2250 2400
 Connection ~ 1900 2400
-$Comp
-L power:GND #PWR?
-U 1 1 5CF554F5
-P 1900 2700
-F 0 "#PWR?" H 1900 2450 50  0001 C CNN
-F 1 "GND" H 1900 2550 50  0000 C CNN
-F 2 "" H 1900 2700 50  0001 C CNN
-F 3 "" H 1900 2700 50  0001 C CNN
-	1    1900 2700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5CF554FB
-P 2250 2700
-F 0 "#PWR?" H 2250 2450 50  0001 C CNN
-F 1 "GND" H 2250 2550 50  0000 C CNN
-F 2 "" H 2250 2700 50  0001 C CNN
-F 3 "" H 2250 2700 50  0001 C CNN
-	1    2250 2700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1600 2400 1600 2600
 Wire Wire Line
@@ -520,21 +432,8 @@ F 3 "~" H 3500 2200 50  0001 C CNN
 	1    3500 2200
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5CF5CDA3
-P 3500 2350
-F 0 "#PWR?" H 3500 2100 50  0001 C CNN
-F 1 "GND" H 3500 2200 50  0000 C CNN
-F 2 "" H 3500 2350 50  0001 C CNN
-F 3 "" H 3500 2350 50  0001 C CNN
-	1    3500 2350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3300 2050 3500 2050
-Text Notes 3800 2400 0    50   ~ 0
-TODO: USB power is not yet complete.\nProbably we need an external regulator. \nThis might be good because unknown power could be noisy. \nAlso we want a microcontroller (e.g., attiny) to control when \nit is powered so we can access DFU.
 Text Notes 5750 3000 2    50   ~ 0
 We don't use the PDR_ON pin, so we tie to VDD\n
 Text GLabel 3400 3200 0    50   Input ~ 0
@@ -562,17 +461,149 @@ Wire Wire Line
 	3600 3200 3600 3150
 Text GLabel 3350 3600 0    50   Input ~ 0
 MCU_VSS
+Wire Wire Line
+	3350 3600 3700 3600
+Text GLabel 3850 4200 0    50   Input ~ 0
++3V3
 $Comp
-L power:GND #PWR?
-U 1 1 5CF6BA04
-P 3700 3600
-F 0 "#PWR?" H 3700 3350 50  0001 C CNN
-F 1 "GND" H 3705 3427 50  0000 C CNN
-F 2 "" H 3700 3600 50  0001 C CNN
-F 3 "" H 3700 3600 50  0001 C CNN
-	1    3700 3600
+L Device:CP1 C?
+U 1 1 5D0A692C
+P 4200 4350
+F 0 "C?" H 4315 4396 50  0000 L CNN
+F 1 "10uF" H 4315 4305 50  0000 L CNN
+F 2 "" H 4200 4350 50  0001 C CNN
+F 3 "~" H 4200 4350 50  0001 C CNN
+	1    4200 4350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3350 3600 3700 3600
+	3850 4200 4200 4200
+Text GLabel 4700 4200 2    50   Input ~ 0
+VDD_MCU
+Wire Wire Line
+	4200 4200 4700 4200
+Connection ~ 4200 4200
+Text GLabel 3850 2050 2    50   Input ~ 0
++3V3
+Wire Wire Line
+	3850 2050 3500 2050
+Connection ~ 3500 2050
+Text Notes 1100 3750 0    50   ~ 0
+MCU Battery power (optional)
+$Comp
+L Device:C C?
+U 1 1 5D0AD9C3
+P 1600 4100
+F 0 "C?" H 1715 4146 50  0000 L CNN
+F 1 "100nF" H 1715 4055 50  0000 L CNN
+F 2 "" H 1638 3950 50  0001 C CNN
+F 3 "~" H 1600 4100 50  0001 C CNN
+	1    1600 4100
+	1    0    0    -1  
+$EndComp
+Text GLabel 1700 5650 0    50   Input ~ 0
+MCU_VCAP
+$Comp
+L Device:C C?
+U 1 1 5D0AEE90
+P 1950 5800
+F 0 "C?" H 2065 5846 50  0000 L CNN
+F 1 "2.2uF" H 2065 5755 50  0000 L CNN
+F 2 "" H 1988 5650 50  0001 C CNN
+F 3 "~" H 1950 5800 50  0001 C CNN
+	1    1950 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D0AEFA3
+P 2450 5800
+F 0 "C?" H 2565 5846 50  0000 L CNN
+F 1 "2.2uF" H 2565 5755 50  0000 L CNN
+F 2 "" H 2488 5650 50  0001 C CNN
+F 3 "~" H 2450 5800 50  0001 C CNN
+	1    2450 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 5650 1950 5650
+Wire Wire Line
+	1950 5650 2450 5650
+Connection ~ 1950 5650
+Wire Wire Line
+	2450 5950 1950 5950
+Text Notes 1250 6350 0    50   ~ 0
+Capacitor ESR must be less than 100 mOhms
+Text Notes 900  2900 0    50   ~ 0
+Or maybe 47R ?\nBoth values are \nsuggested in \nthe datasheets.
+Text GLabel 1400 1450 0    50   Input ~ 0
+DGND
+Text GLabel 2200 4950 2    50   Input ~ 0
+DGND
+Text GLabel 2250 3450 2    50   Input ~ 0
+DGND
+Wire Wire Line
+	1900 3450 2250 3450
+Wire Wire Line
+	1900 2700 2250 2700
+Text GLabel 2250 2700 2    50   Input ~ 0
+DGND
+Text GLabel 3500 2350 0    50   Input ~ 0
+DGND
+Text GLabel 3700 3600 2    50   Input ~ 0
+DGND
+Text GLabel 4200 4500 3    50   Input ~ 0
+DGND
+Text GLabel 2450 5950 2    50   Input ~ 0
+DGND
+Text GLabel 6550 2900 0    50   Input ~ 0
+DGND
+Text GLabel 7400 2900 2    50   Input ~ 0
+AGND
+$Comp
+L Device:D_Schottky D?
+U 1 1 5D0DC644
+P 7000 2700
+F 0 "D?" H 7000 2484 50  0000 C CNN
+F 1 "D_Schottky" H 7000 2575 50  0000 C CNN
+F 2 "" H 7000 2700 50  0001 C CNN
+F 3 "~" H 7000 2700 50  0001 C CNN
+	1    7000 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 5D0DF074
+P 7000 3100
+F 0 "D?" H 7000 3316 50  0000 C CNN
+F 1 "D_Schottky" H 7000 3225 50  0000 C CNN
+F 2 "" H 7000 3100 50  0001 C CNN
+F 3 "~" H 7000 3100 50  0001 C CNN
+	1    7000 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 2900 6700 2900
+Wire Wire Line
+	6700 2900 6700 2700
+Wire Wire Line
+	6700 2700 6850 2700
+Connection ~ 6700 2900
+Wire Wire Line
+	7150 2700 7300 2700
+Wire Wire Line
+	7300 2700 7300 2900
+Wire Wire Line
+	7300 2900 7400 2900
+Connection ~ 7300 2900
+Text Notes 6300 3600 0    50   ~ 0
+Prevent voltage difference between\nanalog and digital ground planes.\nSee Analog Devices MT-031\nDiodes should have voltage drop below 300mV, e.g.:\nTOSHIBA CUS08F30,H3F
+Wire Wire Line
+	6700 3100 6850 3100
+Wire Wire Line
+	6700 2900 6700 3100
+Wire Wire Line
+	7300 3100 7150 3100
+Wire Wire Line
+	7300 2900 7300 3100
 $EndSCHEMATC

@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 12
+Sheet 5 13
 Title ""
 Date ""
 Rev ""
@@ -62,17 +62,6 @@ Text GLabel 6900 1800 2    50   Input ~ 0
 NRST
 Wire Wire Line
 	6900 1800 6250 1800
-$Comp
-L power:GND #PWR?
-U 1 1 5CF60A37
-P 4900 1800
-F 0 "#PWR?" H 4900 1550 50  0001 C CNN
-F 1 "GND" H 4905 1627 50  0000 C CNN
-F 2 "" H 4900 1800 50  0001 C CNN
-F 3 "" H 4900 1800 50  0001 C CNN
-	1    4900 1800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5100 1450 5100 1800
 Wire Wire Line
@@ -122,17 +111,6 @@ Wire Wire Line
 	1800 1800 1800 1600
 Wire Wire Line
 	1800 1600 3000 1600
-$Comp
-L power:GND #PWR?
-U 1 1 5CF61324
-P 4000 1500
-F 0 "#PWR?" H 4000 1250 50  0001 C CNN
-F 1 "GND" H 4005 1327 50  0000 C CNN
-F 2 "" H 4000 1500 50  0001 C CNN
-F 3 "" H 4000 1500 50  0001 C CNN
-	1    4000 1500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1350 1700 1700 1700
 Wire Wire Line
@@ -187,17 +165,6 @@ F 3 "" H 1700 3600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1700 3200 1700 3400
-$Comp
-L power:GND #PWR?
-U 1 1 5CF687C3
-P 1800 3950
-F 0 "#PWR?" H 1800 3700 50  0001 C CNN
-F 1 "GND" H 1805 3777 50  0000 C CNN
-F 2 "" H 1800 3950 50  0001 C CNN
-F 3 "" H 1800 3950 50  0001 C CNN
-	1    1800 3950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1800 3800 1800 3950
 Text GLabel 1200 4000 0    50   Input ~ 0
@@ -206,4 +173,10 @@ Wire Wire Line
 	1600 4000 1600 3800
 Wire Wire Line
 	1200 4000 1600 4000
+Text GLabel 4900 1800 0    50   Input ~ 0
+DGND
+Text GLabel 4000 1500 2    50   Input ~ 0
+DGND
+Text GLabel 1800 3950 2    50   Input ~ 0
+DGND
 $EndSCHEMATC

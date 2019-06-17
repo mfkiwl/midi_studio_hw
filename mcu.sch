@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 12
+Sheet 2 13
 Title ""
 Date ""
 Rev ""
@@ -448,4 +448,6 @@ Text GLabel 4150 4350 0    50   Input ~ 0
 SD_DET
 Text GLabel 4150 4250 0    50   Input ~ 0
 LTDC_RESET
+Text GLabel 4150 5250 0    50   Input ~ 0
+MCU_VCAP
 $EndSCHEMATC

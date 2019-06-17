@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 10 12
+Sheet 10 13
 Title ""
 Date ""
 Rev ""
@@ -80,17 +80,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS14" H 10250 4600 50  0001 C CNN
 	7    10250 4600
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5D016F67
-P 10250 5100
-F 0 "#PWR?" H 10250 4850 50  0001 C CNN
-F 1 "GND" H 10255 4927 50  0000 C CNN
-F 2 "" H 10250 5100 50  0001 C CNN
-F 3 "" H 10250 5100 50  0001 C CNN
-	1    10250 5100
-	1    0    0    -1  
-$EndComp
 Text GLabel 10250 4100 1    50   Input ~ 0
 +5V_DIG
 Text GLabel 1250 5500 3    50   Input ~ 0
@@ -102,17 +91,6 @@ Text GLabel 1250 1200 1    50   Input ~ 0
 NoConn ~ 1350 3100
 Text Notes 1400 3000 1    50   ~ 0
 VE is used for strobing, which we don't do.
-$Comp
-L power:GND #PWR?
-U 1 1 5D01CFC9
-P 1550 3100
-F 0 "#PWR?" H 1550 2850 50  0001 C CNN
-F 1 "GND" V 1555 2972 50  0000 R CNN
-F 2 "" H 1550 3100 50  0001 C CNN
-F 3 "" H 1550 3100 50  0001 C CNN
-	1    1550 3100
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	1250 1200 1250 1250
 $Comp
@@ -219,17 +197,6 @@ Wire Wire Line
 	6700 4550 6700 4500
 Text GLabel 7550 3900 1    50   Input ~ 0
 MIDI_OUT_2
-$Comp
-L power:GND #PWR?
-U 1 1 5D01FABF
-P 7550 3900
-F 0 "#PWR?" H 7550 3650 50  0001 C CNN
-F 1 "GND" H 7555 3727 50  0000 C CNN
-F 2 "" H 7550 3900 50  0001 C CNN
-F 3 "" H 7550 3900 50  0001 C CNN
-	1    7550 3900
-	1    0    0    -1  
-$EndComp
 Text Notes 7700 3950 0    50   ~ 0
 Connected to cable shield(?)
 Text Notes 5400 4100 0    50   ~ 0
@@ -274,17 +241,6 @@ Wire Wire Line
 	3700 3850 3700 3800
 Text GLabel 4550 3200 1    50   Input ~ 0
 MIDI_THRU_2
-$Comp
-L power:GND #PWR?
-U 1 1 5D0214CE
-P 4550 3200
-F 0 "#PWR?" H 4550 2950 50  0001 C CNN
-F 1 "GND" H 4555 3027 50  0000 C CNN
-F 2 "" H 4550 3200 50  0001 C CNN
-F 3 "" H 4550 3200 50  0001 C CNN
-	1    4550 3200
-	1    0    0    -1  
-$EndComp
 Text Notes 4700 3250 0    50   ~ 0
 Connected to cable shield(?)
 Text Notes 2400 3400 0    50   ~ 0
@@ -304,4 +260,16 @@ Wire Wire Line
 	2150 5000 4050 5000
 Wire Wire Line
 	1650 1250 2150 1250
+Text GLabel 1550 3100 1    50   Input ~ 0
+DGND
+Text GLabel 10250 5100 3    50   Input ~ 0
+DGND
+Text GLabel 7550 4050 3    50   Input ~ 0
+DGND
+Wire Wire Line
+	7550 3900 7550 4050
+Text GLabel 4550 3300 3    50   Input ~ 0
+DGND
+Wire Wire Line
+	4550 3300 4550 3200
 $EndSCHEMATC

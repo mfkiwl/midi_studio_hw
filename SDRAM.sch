@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 12
+Sheet 7 13
 Title ""
 Date ""
 Rev ""
@@ -146,17 +146,6 @@ Text GLabel 650  4000 3    50   Input ~ 0
 Wire Wire Line
 	650  3850 650  4000
 Connection ~ 650  3850
-$Comp
-L power:GND #PWR?
-U 1 1 5CFE16C9
-P 3750 4000
-F 0 "#PWR?" H 3750 3750 50  0001 C CNN
-F 1 "GND" H 3755 3827 50  0000 C CNN
-F 2 "" H 3750 4000 50  0001 C CNN
-F 3 "" H 3750 4000 50  0001 C CNN
-	1    3750 4000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3750 3850 3750 4000
 Connection ~ 3750 3850
@@ -379,17 +368,6 @@ Text GLabel 3950 4000 3    50   Input ~ 0
 Wire Wire Line
 	3950 3850 3950 4000
 Connection ~ 3950 3850
-$Comp
-L power:GND #PWR?
-U 1 1 5CFE3057
-P 7050 4000
-F 0 "#PWR?" H 7050 3750 50  0001 C CNN
-F 1 "GND" H 7055 3827 50  0000 C CNN
-F 2 "" H 7050 4000 50  0001 C CNN
-F 3 "" H 7050 4000 50  0001 C CNN
-	1    7050 4000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7050 3850 7050 4000
 Connection ~ 7050 3850
@@ -612,17 +590,6 @@ Text GLabel 7250 4000 3    50   Input ~ 0
 Wire Wire Line
 	7250 3850 7250 4000
 Connection ~ 7250 3850
-$Comp
-L power:GND #PWR?
-U 1 1 5CFE5464
-P 10350 4000
-F 0 "#PWR?" H 10350 3750 50  0001 C CNN
-F 1 "GND" H 10355 3827 50  0000 C CNN
-F 2 "" H 10350 4000 50  0001 C CNN
-F 3 "" H 10350 4000 50  0001 C CNN
-	1    10350 4000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10350 3850 10350 4000
 Connection ~ 10350 3850
@@ -845,17 +812,6 @@ Text GLabel 4050 7550 2    50   Input ~ 0
 Wire Wire Line
 	3900 7550 4050 7550
 Connection ~ 3900 7550
-$Comp
-L power:GND #PWR?
-U 1 1 5CFED4CF
-P 4050 4450
-F 0 "#PWR?" H 4050 4200 50  0001 C CNN
-F 1 "GND" H 4055 4277 50  0000 C CNN
-F 2 "" H 4050 4450 50  0001 C CNN
-F 3 "" H 4050 4450 50  0001 C CNN
-	1    4050 4450
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	3900 4450 4050 4450
 Connection ~ 3900 4450
@@ -1064,4 +1020,12 @@ Text GLabel 1400 5350 1    50   Input ~ 0
 FMC_D31
 Text Notes 800  550  0    50   ~ 0
 Decoupling capacitors, place close to VDD pins on SDRAM
+Text GLabel 3750 4000 3    50   Input ~ 0
+DGND
+Text GLabel 7050 4000 3    50   Input ~ 0
+DGND
+Text GLabel 10350 4000 3    50   Input ~ 0
+DGND
+Text GLabel 4050 4450 2    50   Input ~ 0
+DGND
 $EndSCHEMATC
