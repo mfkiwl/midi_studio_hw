@@ -1,0 +1,12 @@
+The audio input path for a line input starts with an inverting and non-inverting amplifier, which creates a differential signal.
+Each half of the differential signal is filtered by a passive RC low-pass filter
+(6dB per octave) with about a 10KHz 3dB point.
+This differential pair is sent to the input of the audio CODEC (it has
+differential inputs).
+The op-amps are biased so that the signals swing around VCOMAD (see the PCM3168A datasheet), which is about 2.5V.
+
+On the outputs, the differential signal from the audio CODEC's output is passed
+to a diff amp to create the unbalanced line-level signal.
+
+The input impedance of the line-level audio input path is ~13K and the output
+impedance is ~300R.
