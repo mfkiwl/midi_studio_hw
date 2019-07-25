@@ -1,0 +1,909 @@
+EESchema Schematic File Version 4
+LIBS:io_board-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R?
+U 1 1 5D3F59E3
+P 850 2650
+AR Path="/5D3A0EFE/5D3F59E3" Ref="R?"  Part="1" 
+AR Path="/5D3F56F3/5D3F59E3" Ref="R?"  Part="1" 
+F 0 "R?" H 920 2696 50  0000 L CNN
+F 1 "10K" H 920 2605 50  0000 L CNN
+F 2 "" V 780 2650 50  0001 C CNN
+F 3 "~" H 850 2650 50  0001 C CNN
+	1    850  2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D3F59EA
+P 850 2950
+AR Path="/5D3A0EFE/5D3F59EA" Ref="C?"  Part="1" 
+AR Path="/5D3F56F3/5D3F59EA" Ref="C?"  Part="1" 
+F 0 "C?" H 965 2996 50  0000 L CNN
+F 1 "1000pF" H 965 2905 50  0000 L CNN
+F 2 "" H 888 2800 50  0001 C CNN
+F 3 "~" H 850 2950 50  0001 C CNN
+	1    850  2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D3F59F1
+P 1400 2950
+AR Path="/5D3A0EFE/5D3F59F1" Ref="C?"  Part="1" 
+AR Path="/5D3F56F3/5D3F59F1" Ref="C?"  Part="1" 
+F 0 "C?" H 1515 2996 50  0000 L CNN
+F 1 "1000pF" H 1515 2905 50  0000 L CNN
+F 2 "" H 1438 2800 50  0001 C CNN
+F 3 "~" H 1400 2950 50  0001 C CNN
+	1    1400 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D3F59F8
+P 1850 2100
+AR Path="/5D3A0EFE/5D3F59F8" Ref="R?"  Part="1" 
+AR Path="/5D3F56F3/5D3F59F8" Ref="R?"  Part="1" 
+F 0 "R?" H 1920 2146 50  0000 L CNN
+F 1 "10K" H 1920 2055 50  0000 L CNN
+F 2 "" V 1780 2100 50  0001 C CNN
+F 3 "~" H 1850 2100 50  0001 C CNN
+	1    1850 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D3F59FF
+P 1850 2400
+AR Path="/5D3A0EFE/5D3F59FF" Ref="C?"  Part="1" 
+AR Path="/5D3F56F3/5D3F59FF" Ref="C?"  Part="1" 
+F 0 "C?" H 1965 2446 50  0000 L CNN
+F 1 "1000pF" H 1965 2355 50  0000 L CNN
+F 2 "" H 1888 2250 50  0001 C CNN
+F 3 "~" H 1850 2400 50  0001 C CNN
+	1    1850 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D3F5A06
+P 2400 2400
+AR Path="/5D3A0EFE/5D3F5A06" Ref="C?"  Part="1" 
+AR Path="/5D3F56F3/5D3F5A06" Ref="C?"  Part="1" 
+F 0 "C?" H 2515 2446 50  0000 L CNN
+F 1 "1000pF" H 2515 2355 50  0000 L CNN
+F 2 "" H 2438 2250 50  0001 C CNN
+F 3 "~" H 2400 2400 50  0001 C CNN
+	1    2400 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 2250 2400 2250
+Connection ~ 1850 2250
+$Comp
+L power:GND #PWR?
+U 1 1 5D3F5A0F
+P 850 3150
+AR Path="/5D3A0EFE/5D3F5A0F" Ref="#PWR?"  Part="1" 
+AR Path="/5D3F56F3/5D3F5A0F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 850 2900 50  0001 C CNN
+F 1 "GND" H 855 2977 50  0000 C CNN
+F 2 "" H 850 3150 50  0001 C CNN
+F 3 "" H 850 3150 50  0001 C CNN
+	1    850  3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	850  3150 850  3100
+Wire Wire Line
+	1400 3100 850  3100
+Connection ~ 850  3100
+$Comp
+L power:GND #PWR?
+U 1 1 5D3F5A18
+P 1850 2550
+AR Path="/5D3A0EFE/5D3F5A18" Ref="#PWR?"  Part="1" 
+AR Path="/5D3F56F3/5D3F5A18" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1850 2300 50  0001 C CNN
+F 1 "GND" H 1855 2377 50  0000 C CNN
+F 2 "" H 1850 2550 50  0001 C CNN
+F 3 "" H 1850 2550 50  0001 C CNN
+	1    1850 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 2550 2400 2550
+Connection ~ 1850 2550
+Wire Wire Line
+	1400 2800 850  2800
+Connection ~ 850  2800
+$Comp
+L Device:Jumper JP?
+U 1 1 5D3F5A26
+P 850 1900
+AR Path="/5D3A0EFE/5D3F5A26" Ref="JP?"  Part="1" 
+AR Path="/5D3F56F3/5D3F5A26" Ref="JP?"  Part="1" 
+F 0 "JP?" V 804 2027 50  0000 L CNN
+F 1 "Positive signal" V 895 2027 50  0000 L CNN
+F 2 "" H 850 1900 50  0001 C CNN
+F 3 "~" H 850 1900 50  0001 C CNN
+	1    850  1900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	850  2200 850  2500
+$Comp
+L Device:Jumper JP?
+U 1 1 5D3F5B94
+P 1850 1650
+AR Path="/5D3A0EFE/5D3F5B94" Ref="JP?"  Part="1" 
+AR Path="/5D3F56F3/5D3F5B94" Ref="JP?"  Part="1" 
+F 0 "JP?" V 1804 1776 50  0000 L CNN
+F 1 "Inverted signal" V 1895 1776 50  0000 L CNN
+F 2 "" H 1850 1650 50  0001 C CNN
+F 3 "~" H 1850 1650 50  0001 C CNN
+	1    1850 1650
+	0    1    1    0   
+$EndComp
+Text HLabel 850  1600 1    50   Input ~ 0
+INA+
+Text HLabel 1850 1350 1    50   Input ~ 0
+INA-
+$Comp
+L midi_studio_components:NE5532A U?
+U 1 1 5D3F5FD3
+P 3600 2750
+AR Path="/5D3A0EFE/5D3F5FD3" Ref="U?"  Part="1" 
+AR Path="/5D3F56F3/5D3F5FD3" Ref="U?"  Part="1" 
+F 0 "U?" H 3600 3165 50  0000 C CNN
+F 1 "NE5532A" H 3600 3074 50  0000 C CNN
+F 2 "" H 3600 2750 50  0001 C CNN
+F 3 "" H 3600 2750 50  0001 C CNN
+	1    3600 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 2900 4100 2900
+Wire Wire Line
+	3100 2700 3000 2700
+Wire Wire Line
+	3000 2700 3000 2600
+Wire Wire Line
+	3000 2600 3100 2600
+Wire Wire Line
+	4100 2700 4200 2700
+Wire Wire Line
+	4200 2700 4200 2800
+Wire Wire Line
+	4200 2800 4100 2800
+$Comp
+L power:GND #PWR?
+U 1 1 5D3F5FE2
+P 3100 2900
+AR Path="/5D3A0EFE/5D3F5FE2" Ref="#PWR?"  Part="1" 
+AR Path="/5D3F56F3/5D3F5FE2" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3100 2650 50  0001 C CNN
+F 1 "GND" H 3105 2727 50  0000 C CNN
+F 2 "" H 3100 2900 50  0001 C CNN
+F 3 "" H 3100 2900 50  0001 C CNN
+	1    3100 2900
+	1    0    0    -1  
+$EndComp
+Text GLabel 4650 2500 1    50   Input ~ 0
++12V_UNREG
+Wire Wire Line
+	4650 2500 4650 2600
+Wire Wire Line
+	4650 2600 4100 2600
+$Comp
+L Device:Jumper JP?
+U 1 1 5D3F5FEF
+P 4200 3450
+AR Path="/5D3A0EFE/5D3F5FEF" Ref="JP?"  Part="1" 
+AR Path="/5D3F56F3/5D3F5FEF" Ref="JP?"  Part="1" 
+F 0 "JP?" V 4154 3576 50  0000 L CNN
+F 1 "LPFA-" V 4245 3576 50  0000 L CNN
+F 2 "" H 4200 3450 50  0001 C CNN
+F 3 "~" H 4200 3450 50  0001 C CNN
+	1    4200 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Jumper JP?
+U 1 1 5D3F5FF8
+P 3000 3450
+AR Path="/5D3A0EFE/5D3F5FF8" Ref="JP?"  Part="1" 
+AR Path="/5D3F56F3/5D3F5FF8" Ref="JP?"  Part="1" 
+F 0 "JP?" V 2954 3576 50  0000 L CNN
+F 1 "LPFA+" V 3045 3576 50  0000 L CNN
+F 2 "" H 3000 3450 50  0001 C CNN
+F 3 "~" H 3000 3450 50  0001 C CNN
+	1    3000 3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1400 2800 3100 2800
+Connection ~ 1400 2800
+Wire Wire Line
+	2400 2250 4400 2250
+Connection ~ 2400 2250
+Wire Wire Line
+	4400 2250 4400 2900
+Text Notes 2250 2050 0    50   ~ 0
+Smooth signal from CODEC with low-pass filter
+Wire Wire Line
+	3000 2700 3000 3150
+Connection ~ 3000 2700
+Wire Wire Line
+	4200 2800 4200 3150
+Connection ~ 4200 2800
+$Comp
+L midi_studio_components:NE5532A U?
+U 1 1 5D3F75AC
+P 3650 5150
+AR Path="/5D3A0EFE/5D3F75AC" Ref="U?"  Part="1" 
+AR Path="/5D3F56F3/5D3F75AC" Ref="U?"  Part="1" 
+F 0 "U?" H 3650 5565 50  0000 C CNN
+F 1 "NE5532A" H 3650 5474 50  0000 C CNN
+F 2 "" H 3650 5150 50  0001 C CNN
+F 3 "" H 3650 5150 50  0001 C CNN
+	1    3650 5150
+	1    0    0    -1  
+$EndComp
+Text Notes 850  3900 0    50   ~ 0
+done with 2 separate filters because we might eventually output a balanced signal
+Text Notes 3450 5500 0    50   ~ 0
+differential amplifier to form the output
+$Comp
+L Device:R R?
+U 1 1 5D3F782C
+P 3000 4150
+F 0 "R?" H 3070 4196 50  0000 L CNN
+F 1 "100K" H 3070 4105 50  0000 L CNN
+F 2 "" V 2930 4150 50  0001 C CNN
+F 3 "~" H 3000 4150 50  0001 C CNN
+	1    3000 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D3F78A9
+P 4200 4150
+F 0 "R?" H 4270 4196 50  0000 L CNN
+F 1 "100K" H 4270 4105 50  0000 L CNN
+F 2 "" V 4130 4150 50  0001 C CNN
+F 3 "~" H 4200 4150 50  0001 C CNN
+	1    4200 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 3750 4200 4000
+Wire Wire Line
+	3000 3750 3000 4000
+$Comp
+L Device:R R?
+U 1 1 5D3F7CD9
+P 2750 5000
+F 0 "R?" V 2543 5000 50  0000 C CNN
+F 1 "100K" V 2634 5000 50  0000 C CNN
+F 2 "" V 2680 5000 50  0001 C CNN
+F 3 "~" H 2750 5000 50  0001 C CNN
+	1    2750 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D3F81AA
+P 2400 5200
+F 0 "R?" V 2193 5200 50  0000 C CNN
+F 1 "100K" V 2284 5200 50  0000 C CNN
+F 2 "" V 2330 5200 50  0001 C CNN
+F 3 "~" H 2400 5200 50  0001 C CNN
+	1    2400 5200
+	0    1    1    0   
+$EndComp
+Text GLabel 1900 5200 0    50   Input ~ 0
+VCOMAD
+Wire Wire Line
+	1900 5200 2250 5200
+Wire Wire Line
+	2550 5200 3000 5200
+Wire Wire Line
+	3000 4300 3000 5200
+Connection ~ 3000 5200
+Wire Wire Line
+	3000 5200 3150 5200
+Wire Wire Line
+	4200 4300 4200 4450
+Wire Wire Line
+	4200 4450 3050 4450
+Wire Wire Line
+	3050 5100 3150 5100
+$Comp
+L power:GND #PWR?
+U 1 1 5D3F916A
+P 3150 5300
+AR Path="/5D3A0EFE/5D3F916A" Ref="#PWR?"  Part="1" 
+AR Path="/5D3F56F3/5D3F916A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3150 5050 50  0001 C CNN
+F 1 "GND" H 3155 5127 50  0000 C CNN
+F 2 "" H 3150 5300 50  0001 C CNN
+F 3 "" H 3150 5300 50  0001 C CNN
+	1    3150 5300
+	1    0    0    -1  
+$EndComp
+Text GLabel 4400 4500 2    50   Input ~ 0
++12V_UNREG
+Wire Wire Line
+	2900 5000 3150 5000
+Wire Wire Line
+	3050 4450 3050 5100
+Wire Wire Line
+	3050 5100 2550 5100
+Wire Wire Line
+	2550 5100 2550 5000
+Wire Wire Line
+	2550 5000 2600 5000
+Connection ~ 3050 5100
+$Comp
+L Device:Jumper JP?
+U 1 1 5D3FA7DA
+P 2550 5900
+AR Path="/5D3A0EFE/5D3FA7DA" Ref="JP?"  Part="1" 
+AR Path="/5D3F56F3/5D3FA7DA" Ref="JP?"  Part="1" 
+F 0 "JP?" V 2504 6026 50  0000 L CNN
+F 1 "LINE_OUT_A" V 2595 6026 50  0000 L CNN
+F 2 "" H 2550 5900 50  0001 C CNN
+F 3 "~" H 2550 5900 50  0001 C CNN
+	1    2550 5900
+	0    1    1    0   
+$EndComp
+Connection ~ 2550 5100
+$Comp
+L Connector:AudioJack2_Ground_Switch J?
+U 1 1 5D3FB06A
+P 1050 6250
+AR Path="/5D3A0EFE/5D3FB06A" Ref="J?"  Part="1" 
+AR Path="/5D3F56F3/5D3FB06A" Ref="J?"  Part="1" 
+F 0 "J?" H 1080 6675 50  0000 C CNN
+F 1 "AudioJack2_Ground_Switch" H 1080 6584 50  0000 C CNN
+F 2 "" H 1050 6450 50  0001 C CNN
+F 3 "~" H 1050 6450 50  0001 C CNN
+	1    1050 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D3FB071
+P 1750 6250
+AR Path="/5D3A0EFE/5D3FB071" Ref="C?"  Part="1" 
+AR Path="/5D3F56F3/5D3FB071" Ref="C?"  Part="1" 
+F 0 "C?" V 1498 6250 50  0000 C CNN
+F 1 "100nF" V 1589 6250 50  0000 C CNN
+F 2 "" H 1788 6100 50  0001 C CNN
+F 3 "~" H 1750 6250 50  0001 C CNN
+	1    1750 6250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1250 6250 1600 6250
+Wire Wire Line
+	2550 6200 2550 6250
+Wire Wire Line
+	2550 6250 1900 6250
+$Comp
+L power:GND #PWR?
+U 1 1 5D3FE2B7
+P 1350 6550
+F 0 "#PWR?" H 1350 6300 50  0001 C CNN
+F 1 "GND" H 1355 6377 50  0000 C CNN
+F 2 "" H 1350 6550 50  0001 C CNN
+F 3 "" H 1350 6550 50  0001 C CNN
+	1    1350 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 6050 1350 6050
+Wire Wire Line
+	1050 6550 1350 6550
+Wire Wire Line
+	1350 6050 1350 6550
+Connection ~ 1350 6550
+Text HLabel 3250 6200 3    50   Input ~ 0
+LINE_OUT_A
+Wire Wire Line
+	2550 5550 3250 5550
+Wire Wire Line
+	3250 5550 3250 6200
+Connection ~ 2550 5550
+Wire Wire Line
+	2550 5550 2550 5600
+$Comp
+L Device:R R?
+U 1 1 5D4049BD
+P 6750 2500
+AR Path="/5D3A0EFE/5D4049BD" Ref="R?"  Part="1" 
+AR Path="/5D3F56F3/5D4049BD" Ref="R?"  Part="1" 
+F 0 "R?" H 6820 2546 50  0000 L CNN
+F 1 "10K" H 6820 2455 50  0000 L CNN
+F 2 "" V 6680 2500 50  0001 C CNN
+F 3 "~" H 6750 2500 50  0001 C CNN
+	1    6750 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D4049C4
+P 6750 2800
+AR Path="/5D3A0EFE/5D4049C4" Ref="C?"  Part="1" 
+AR Path="/5D3F56F3/5D4049C4" Ref="C?"  Part="1" 
+F 0 "C?" H 6865 2846 50  0000 L CNN
+F 1 "1000pF" H 6865 2755 50  0000 L CNN
+F 2 "" H 6788 2650 50  0001 C CNN
+F 3 "~" H 6750 2800 50  0001 C CNN
+	1    6750 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D4049CB
+P 7300 2800
+AR Path="/5D3A0EFE/5D4049CB" Ref="C?"  Part="1" 
+AR Path="/5D3F56F3/5D4049CB" Ref="C?"  Part="1" 
+F 0 "C?" H 7415 2846 50  0000 L CNN
+F 1 "1000pF" H 7415 2755 50  0000 L CNN
+F 2 "" H 7338 2650 50  0001 C CNN
+F 3 "~" H 7300 2800 50  0001 C CNN
+	1    7300 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D4049D2
+P 7750 1950
+AR Path="/5D3A0EFE/5D4049D2" Ref="R?"  Part="1" 
+AR Path="/5D3F56F3/5D4049D2" Ref="R?"  Part="1" 
+F 0 "R?" H 7820 1996 50  0000 L CNN
+F 1 "10K" H 7820 1905 50  0000 L CNN
+F 2 "" V 7680 1950 50  0001 C CNN
+F 3 "~" H 7750 1950 50  0001 C CNN
+	1    7750 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D4049D9
+P 7750 2250
+AR Path="/5D3A0EFE/5D4049D9" Ref="C?"  Part="1" 
+AR Path="/5D3F56F3/5D4049D9" Ref="C?"  Part="1" 
+F 0 "C?" H 7865 2296 50  0000 L CNN
+F 1 "1000pF" H 7865 2205 50  0000 L CNN
+F 2 "" H 7788 2100 50  0001 C CNN
+F 3 "~" H 7750 2250 50  0001 C CNN
+	1    7750 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D4049E0
+P 8300 2250
+AR Path="/5D3A0EFE/5D4049E0" Ref="C?"  Part="1" 
+AR Path="/5D3F56F3/5D4049E0" Ref="C?"  Part="1" 
+F 0 "C?" H 8415 2296 50  0000 L CNN
+F 1 "1000pF" H 8415 2205 50  0000 L CNN
+F 2 "" H 8338 2100 50  0001 C CNN
+F 3 "~" H 8300 2250 50  0001 C CNN
+	1    8300 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 2100 8300 2100
+Connection ~ 7750 2100
+$Comp
+L power:GND #PWR?
+U 1 1 5D4049E9
+P 6750 3000
+AR Path="/5D3A0EFE/5D4049E9" Ref="#PWR?"  Part="1" 
+AR Path="/5D3F56F3/5D4049E9" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6750 2750 50  0001 C CNN
+F 1 "GND" H 6755 2827 50  0000 C CNN
+F 2 "" H 6750 3000 50  0001 C CNN
+F 3 "" H 6750 3000 50  0001 C CNN
+	1    6750 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 3000 6750 2950
+Wire Wire Line
+	7300 2950 6750 2950
+Connection ~ 6750 2950
+$Comp
+L power:GND #PWR?
+U 1 1 5D4049F2
+P 7750 2400
+AR Path="/5D3A0EFE/5D4049F2" Ref="#PWR?"  Part="1" 
+AR Path="/5D3F56F3/5D4049F2" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7750 2150 50  0001 C CNN
+F 1 "GND" H 7755 2227 50  0000 C CNN
+F 2 "" H 7750 2400 50  0001 C CNN
+F 3 "" H 7750 2400 50  0001 C CNN
+	1    7750 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 2400 8300 2400
+Connection ~ 7750 2400
+Wire Wire Line
+	7300 2650 6750 2650
+Connection ~ 6750 2650
+$Comp
+L Device:Jumper JP?
+U 1 1 5D4049FC
+P 6750 1750
+AR Path="/5D3A0EFE/5D4049FC" Ref="JP?"  Part="1" 
+AR Path="/5D3F56F3/5D4049FC" Ref="JP?"  Part="1" 
+F 0 "JP?" V 6704 1877 50  0000 L CNN
+F 1 "Positive signal" V 6795 1877 50  0000 L CNN
+F 2 "" H 6750 1750 50  0001 C CNN
+F 3 "~" H 6750 1750 50  0001 C CNN
+	1    6750 1750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6750 2050 6750 2350
+$Comp
+L Device:Jumper JP?
+U 1 1 5D404A04
+P 7750 1500
+AR Path="/5D3A0EFE/5D404A04" Ref="JP?"  Part="1" 
+AR Path="/5D3F56F3/5D404A04" Ref="JP?"  Part="1" 
+F 0 "JP?" V 7704 1626 50  0000 L CNN
+F 1 "Inverted signal" V 7795 1626 50  0000 L CNN
+F 2 "" H 7750 1500 50  0001 C CNN
+F 3 "~" H 7750 1500 50  0001 C CNN
+	1    7750 1500
+	0    1    1    0   
+$EndComp
+Text HLabel 6750 1450 1    50   Input ~ 0
+INB+
+Text HLabel 7750 1200 1    50   Input ~ 0
+INB-
+$Comp
+L midi_studio_components:NE5532A U?
+U 1 1 5D404A0D
+P 9500 2600
+AR Path="/5D3A0EFE/5D404A0D" Ref="U?"  Part="1" 
+AR Path="/5D3F56F3/5D404A0D" Ref="U?"  Part="1" 
+F 0 "U?" H 9500 3015 50  0000 C CNN
+F 1 "NE5532A" H 9500 2924 50  0000 C CNN
+F 2 "" H 9500 2600 50  0001 C CNN
+F 3 "" H 9500 2600 50  0001 C CNN
+	1    9500 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10300 2750 10000 2750
+Wire Wire Line
+	9000 2550 8900 2550
+Wire Wire Line
+	8900 2550 8900 2450
+Wire Wire Line
+	8900 2450 9000 2450
+Wire Wire Line
+	10000 2550 10100 2550
+Wire Wire Line
+	10100 2550 10100 2650
+Wire Wire Line
+	10100 2650 10000 2650
+$Comp
+L power:GND #PWR?
+U 1 1 5D404A1B
+P 9000 2750
+AR Path="/5D3A0EFE/5D404A1B" Ref="#PWR?"  Part="1" 
+AR Path="/5D3F56F3/5D404A1B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9000 2500 50  0001 C CNN
+F 1 "GND" H 9005 2577 50  0000 C CNN
+F 2 "" H 9000 2750 50  0001 C CNN
+F 3 "" H 9000 2750 50  0001 C CNN
+	1    9000 2750
+	1    0    0    -1  
+$EndComp
+Text GLabel 10550 2350 1    50   Input ~ 0
++12V_UNREG
+Wire Wire Line
+	10550 2350 10550 2450
+Wire Wire Line
+	10550 2450 10000 2450
+$Comp
+L Device:Jumper JP?
+U 1 1 5D404A24
+P 10100 3300
+AR Path="/5D3A0EFE/5D404A24" Ref="JP?"  Part="1" 
+AR Path="/5D3F56F3/5D404A24" Ref="JP?"  Part="1" 
+F 0 "JP?" V 10054 3427 50  0000 L CNN
+F 1 "LPFB-" V 10145 3427 50  0000 L CNN
+F 2 "" H 10100 3300 50  0001 C CNN
+F 3 "~" H 10100 3300 50  0001 C CNN
+	1    10100 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Jumper JP?
+U 1 1 5D404A2B
+P 8900 3300
+AR Path="/5D3A0EFE/5D404A2B" Ref="JP?"  Part="1" 
+AR Path="/5D3F56F3/5D404A2B" Ref="JP?"  Part="1" 
+F 0 "JP?" V 8854 3427 50  0000 L CNN
+F 1 "LPFB+" V 8945 3427 50  0000 L CNN
+F 2 "" H 8900 3300 50  0001 C CNN
+F 3 "~" H 8900 3300 50  0001 C CNN
+	1    8900 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7300 2650 9000 2650
+Connection ~ 7300 2650
+Wire Wire Line
+	8300 2100 10300 2100
+Connection ~ 8300 2100
+Wire Wire Line
+	10300 2100 10300 2750
+Text Notes 8150 1900 0    50   ~ 0
+Smooth signal from CODEC with low-pass filter
+Wire Wire Line
+	8900 2550 8900 3000
+Connection ~ 8900 2550
+Wire Wire Line
+	10100 2650 10100 3000
+Connection ~ 10100 2650
+$Comp
+L Device:R R?
+U 1 1 5D404A3E
+P 8900 4000
+F 0 "R?" H 8970 4046 50  0000 L CNN
+F 1 "100K" H 8970 3955 50  0000 L CNN
+F 2 "" V 8830 4000 50  0001 C CNN
+F 3 "~" H 8900 4000 50  0001 C CNN
+	1    8900 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D404A45
+P 10100 4000
+F 0 "R?" H 10170 4046 50  0000 L CNN
+F 1 "100K" H 10170 3955 50  0000 L CNN
+F 2 "" V 10030 4000 50  0001 C CNN
+F 3 "~" H 10100 4000 50  0001 C CNN
+	1    10100 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 3600 10100 3850
+Wire Wire Line
+	8900 3600 8900 3850
+$Comp
+L Device:R R?
+U 1 1 5D406002
+P 4550 5100
+F 0 "R?" V 4343 5100 50  0000 C CNN
+F 1 "100K" V 4434 5100 50  0000 C CNN
+F 2 "" V 4480 5100 50  0001 C CNN
+F 3 "~" H 4550 5100 50  0001 C CNN
+	1    4550 5100
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D406009
+P 4900 5300
+F 0 "R?" V 4693 5300 50  0000 C CNN
+F 1 "100K" V 4784 5300 50  0000 C CNN
+F 2 "" V 4830 5300 50  0001 C CNN
+F 3 "~" H 4900 5300 50  0001 C CNN
+	1    4900 5300
+	0    -1   1    0   
+$EndComp
+Text GLabel 5400 5300 2    50   Input ~ 0
+VCOMAD
+Wire Wire Line
+	5400 5300 5050 5300
+Wire Wire Line
+	4750 5300 4300 5300
+Connection ~ 4300 5300
+Wire Wire Line
+	4300 5300 4150 5300
+Wire Wire Line
+	4250 5200 4150 5200
+Wire Wire Line
+	4400 5100 4150 5100
+Wire Wire Line
+	4250 5200 4750 5200
+Wire Wire Line
+	4750 5200 4750 5100
+Wire Wire Line
+	4750 5100 4700 5100
+Connection ~ 4250 5200
+Connection ~ 4750 5200
+Wire Wire Line
+	10100 4650 4250 4650
+Wire Wire Line
+	10100 4150 10100 4650
+Wire Wire Line
+	4250 4650 4250 5200
+Wire Wire Line
+	8900 4150 8900 4700
+Wire Wire Line
+	8900 4700 4300 4700
+Wire Wire Line
+	4300 4700 4300 5300
+Wire Wire Line
+	4400 4500 4200 4500
+Wire Wire Line
+	4200 4500 4200 5000
+Wire Wire Line
+	4200 5000 4150 5000
+$Comp
+L Device:Jumper JP?
+U 1 1 5D4105D0
+P 4750 6350
+AR Path="/5D3A0EFE/5D4105D0" Ref="JP?"  Part="1" 
+AR Path="/5D3F56F3/5D4105D0" Ref="JP?"  Part="1" 
+F 0 "JP?" V 4704 6262 50  0000 R CNN
+F 1 "LINE_OUT_B" V 4795 6262 50  0000 R CNN
+F 2 "" H 4750 6350 50  0001 C CNN
+F 3 "~" H 4750 6350 50  0001 C CNN
+	1    4750 6350
+	0    -1   1    0   
+$EndComp
+$Comp
+L Connector:AudioJack2_Ground_Switch J?
+U 1 1 5D4105D8
+P 6250 6700
+AR Path="/5D3A0EFE/5D4105D8" Ref="J?"  Part="1" 
+AR Path="/5D3F56F3/5D4105D8" Ref="J?"  Part="1" 
+F 0 "J?" H 6280 7125 50  0000 C CNN
+F 1 "AudioJack2_Ground_Switch" H 6280 7034 50  0000 C CNN
+F 2 "" H 6250 6900 50  0001 C CNN
+F 3 "~" H 6250 6900 50  0001 C CNN
+	1    6250 6700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D4105DF
+P 5550 6700
+AR Path="/5D3A0EFE/5D4105DF" Ref="C?"  Part="1" 
+AR Path="/5D3F56F3/5D4105DF" Ref="C?"  Part="1" 
+F 0 "C?" V 5298 6700 50  0000 C CNN
+F 1 "100nF" V 5389 6700 50  0000 C CNN
+F 2 "" H 5588 6550 50  0001 C CNN
+F 3 "~" H 5550 6700 50  0001 C CNN
+	1    5550 6700
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	6050 6700 5700 6700
+Wire Wire Line
+	4750 6650 4750 6700
+Wire Wire Line
+	4750 6700 5400 6700
+$Comp
+L power:GND #PWR?
+U 1 1 5D4105E9
+P 5950 7000
+F 0 "#PWR?" H 5950 6750 50  0001 C CNN
+F 1 "GND" H 5955 6827 50  0000 C CNN
+F 2 "" H 5950 7000 50  0001 C CNN
+F 3 "" H 5950 7000 50  0001 C CNN
+	1    5950 7000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 6500 5950 6500
+Wire Wire Line
+	6250 7000 5950 7000
+Wire Wire Line
+	5950 6500 5950 7000
+Connection ~ 5950 7000
+Text HLabel 4450 6650 3    50   Input ~ 0
+LINE_OUT_B
+Wire Wire Line
+	4750 6000 4450 6000
+Wire Wire Line
+	4450 6000 4450 6650
+Connection ~ 4750 6000
+Wire Wire Line
+	4750 6000 4750 6050
+$Comp
+L Device:C C?
+U 1 1 5D4322C0
+P 4650 3300
+F 0 "C?" H 4765 3346 50  0000 L CNN
+F 1 "100nF" H 4765 3255 50  0000 L CNN
+F 2 "" H 4688 3150 50  0001 C CNN
+F 3 "~" H 4650 3300 50  0001 C CNN
+	1    4650 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 2600 4650 3150
+$Comp
+L power:GND #PWR?
+U 1 1 5D4322C8
+P 4650 3450
+F 0 "#PWR?" H 4650 3200 50  0001 C CNN
+F 1 "GND" H 4655 3277 50  0000 C CNN
+F 2 "" H 4650 3450 50  0001 C CNN
+F 3 "" H 4650 3450 50  0001 C CNN
+	1    4650 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D434729
+P 10550 3150
+F 0 "C?" H 10665 3196 50  0000 L CNN
+F 1 "100nF" H 10665 3105 50  0000 L CNN
+F 2 "" H 10588 3000 50  0001 C CNN
+F 3 "~" H 10550 3150 50  0001 C CNN
+	1    10550 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10550 2450 10550 3000
+$Comp
+L power:GND #PWR?
+U 1 1 5D434731
+P 10550 3300
+F 0 "#PWR?" H 10550 3050 50  0001 C CNN
+F 1 "GND" H 10555 3127 50  0000 C CNN
+F 2 "" H 10550 3300 50  0001 C CNN
+F 3 "" H 10550 3300 50  0001 C CNN
+	1    10550 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D4391B4
+P 4200 5700
+F 0 "C?" H 4315 5746 50  0000 L CNN
+F 1 "100nF" H 4315 5655 50  0000 L CNN
+F 2 "" H 4238 5550 50  0001 C CNN
+F 3 "~" H 4200 5700 50  0001 C CNN
+	1    4200 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 5000 4200 5550
+$Comp
+L power:GND #PWR?
+U 1 1 5D4391BC
+P 4200 5850
+F 0 "#PWR?" H 4200 5600 50  0001 C CNN
+F 1 "GND" H 4205 5677 50  0000 C CNN
+F 2 "" H 4200 5850 50  0001 C CNN
+F 3 "" H 4200 5850 50  0001 C CNN
+	1    4200 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 5100 2550 5550
+Wire Wire Line
+	4750 5200 4750 6000
+$EndSCHEMATC

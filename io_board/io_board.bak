@@ -21,12 +21,12 @@ F0 "Power" 50
 F1 "power.sch" 50
 $EndSheet
 $Sheet
-S 3000 2050 1050 250 
+S 2700 1050 1050 250 
 U 5D3A0EFE
 F0 "Audio Input Stage 1" 50
 F1 "audio_input_stage.sch" 50
-F2 "OUT+" I L 3000 2200 50 
-F3 "OUT-" I L 3000 2100 50 
+F2 "OUT+" I L 2700 1200 50 
+F3 "OUT-" I L 2700 1100 50 
 $EndSheet
 $Sheet
 S 4200 1000 1250 850 

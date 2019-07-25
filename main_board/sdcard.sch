@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:midi_studio_v1-cache
+LIBS:main_board-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268

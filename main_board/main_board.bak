@@ -21,19 +21,19 @@ F0 "mcu" 50
 F1 "mcu.sch" 50
 $EndSheet
 $Sheet
-S 1750 800  500  400 
+S 2100 800  500  400 
 U 5CE5F83A
 F0 "mcu_power" 50
 F1 "mcu_power.sch" 50
 $EndSheet
 $Sheet
-S 2700 800  550  400 
+S 2900 800  550  400 
 U 5CF5F3AC
 F0 "Crystals" 50
 F1 "xtals.sch" 50
 $EndSheet
 $Sheet
-S 3500 800  500  400 
+S 3800 800  500  400 
 U 5CF60766
 F0 "Trace/Debug" 50
 F1 "trace_debug.sch" 50

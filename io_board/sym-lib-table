@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name contrib_connectors)(type Legacy)(uri ${KIPRJMOD}/../common_pcb_components/kicad/contrib_connectors.lib)(options "")(descr ""))
+)
