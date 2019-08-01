@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:midi_studio_v1-cache
-EELAYER 26 0
+LIBS:io_board-cache
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 13
+Sheet 8 8
 Title ""
 Date ""
 Rev ""
@@ -67,8 +67,6 @@ Text GLabel 5600 4300 3    50   Input ~ 0
 SD_VDD
 Text GLabel 6600 4350 0    50   Input ~ 0
 +3V3
-Wire Wire Line
-	6600 4350 6750 4350
 $Comp
 L Device:C C?
 U 1 1 5CFEB1BC
@@ -91,14 +89,6 @@ F 3 "~" H 7200 4500 50  0001 C CNN
 	1    7200 4500
 	1    0    0    -1  
 $EndComp
-Connection ~ 7200 4350
-Wire Wire Line
-	7200 4350 7450 4350
-Connection ~ 6750 4350
-Wire Wire Line
-	6750 4350 7200 4350
-Wire Wire Line
-	6300 3650 6800 3650
 $Comp
 L Device:C C?
 U 1 1 5CFEB9CB
@@ -110,9 +100,6 @@ F 3 "~" H 6800 3800 50  0001 C CNN
 	1    6800 3800
 	1    0    0    -1  
 $EndComp
-Connection ~ 6800 3650
-Wire Wire Line
-	6800 3650 7200 3650
 Wire Wire Line
 	6750 4650 7200 4650
 Text GLabel 7200 4650 3    50   Input ~ 0
@@ -125,4 +112,8 @@ Text GLabel 4400 3300 0    50   Input ~ 0
 DGND
 Text GLabel 6800 3950 3    50   Input ~ 0
 DGND
+Wire Wire Line
+	6600 4350 7450 4350
+Wire Wire Line
+	6300 3650 7200 3650
 $EndSCHEMATC

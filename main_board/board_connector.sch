@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
 LIBS:main_board-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 13 13
+Sheet 12 12
 Title ""
 Date ""
 Rev ""
@@ -242,4 +242,8 @@ Text GLabel 4400 4750 0    50   Input ~ 0
 ACODEC_VIN6-
 Text GLabel 4400 4850 0    50   Input ~ 0
 ACODEC_VIN6+
+Text GLabel 1900 2850 0    50   Input ~ 0
+ENC2_SW
+Text GLabel 1900 3350 0    50   Input ~ 0
+ENC1_SW
 $EndSCHEMATC

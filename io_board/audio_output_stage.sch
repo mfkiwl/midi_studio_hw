@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
 LIBS:io_board-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 5
+Sheet 4 8
 Title ""
 Date ""
 Rev ""
@@ -95,40 +95,13 @@ $EndComp
 Wire Wire Line
 	1850 2250 2400 2250
 Connection ~ 1850 2250
-$Comp
-L power:GND #PWR?
-U 1 1 5D3F5A0F
-P 850 3150
-AR Path="/5D3A0EFE/5D3F5A0F" Ref="#PWR?"  Part="1" 
-AR Path="/5D3F56F3/5D3F5A0F" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 850 2900 50  0001 C CNN
-F 1 "GND" H 855 2977 50  0000 C CNN
-F 2 "" H 850 3150 50  0001 C CNN
-F 3 "" H 850 3150 50  0001 C CNN
-	1    850  3150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	850  3150 850  3100
 Wire Wire Line
 	1400 3100 850  3100
 Connection ~ 850  3100
-$Comp
-L power:GND #PWR?
-U 1 1 5D3F5A18
-P 1850 2550
-AR Path="/5D3A0EFE/5D3F5A18" Ref="#PWR?"  Part="1" 
-AR Path="/5D3F56F3/5D3F5A18" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 1850 2300 50  0001 C CNN
-F 1 "GND" H 1855 2377 50  0000 C CNN
-F 2 "" H 1850 2550 50  0001 C CNN
-F 3 "" H 1850 2550 50  0001 C CNN
-	1    1850 2550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1850 2550 2400 2550
-Connection ~ 1850 2550
 Wire Wire Line
 	1400 2800 850  2800
 Connection ~ 850  2800
@@ -191,19 +164,6 @@ Wire Wire Line
 	4200 2700 4200 2800
 Wire Wire Line
 	4200 2800 4100 2800
-$Comp
-L power:GND #PWR?
-U 1 1 5D3F5FE2
-P 3100 2900
-AR Path="/5D3A0EFE/5D3F5FE2" Ref="#PWR?"  Part="1" 
-AR Path="/5D3F56F3/5D3F5FE2" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3100 2650 50  0001 C CNN
-F 1 "GND" H 3105 2727 50  0000 C CNN
-F 2 "" H 3100 2900 50  0001 C CNN
-F 3 "" H 3100 2900 50  0001 C CNN
-	1    3100 2900
-	1    0    0    -1  
-$EndComp
 Text GLabel 4650 2500 1    50   Input ~ 0
 +12V_UNREG
 Wire Wire Line
@@ -334,19 +294,6 @@ Wire Wire Line
 	4200 4450 3050 4450
 Wire Wire Line
 	3050 5100 3150 5100
-$Comp
-L power:GND #PWR?
-U 1 1 5D3F916A
-P 3150 5300
-AR Path="/5D3A0EFE/5D3F916A" Ref="#PWR?"  Part="1" 
-AR Path="/5D3F56F3/5D3F916A" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3150 5050 50  0001 C CNN
-F 1 "GND" H 3155 5127 50  0000 C CNN
-F 2 "" H 3150 5300 50  0001 C CNN
-F 3 "" H 3150 5300 50  0001 C CNN
-	1    3150 5300
-	1    0    0    -1  
-$EndComp
 Text GLabel 4400 4500 2    50   Input ~ 0
 +12V_UNREG
 Wire Wire Line
@@ -406,24 +353,12 @@ Wire Wire Line
 	2550 6200 2550 6250
 Wire Wire Line
 	2550 6250 1900 6250
-$Comp
-L power:GND #PWR?
-U 1 1 5D3FE2B7
-P 1350 6550
-F 0 "#PWR?" H 1350 6300 50  0001 C CNN
-F 1 "GND" H 1355 6377 50  0000 C CNN
-F 2 "" H 1350 6550 50  0001 C CNN
-F 3 "" H 1350 6550 50  0001 C CNN
-	1    1350 6550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1250 6050 1350 6050
 Wire Wire Line
 	1050 6550 1350 6550
 Wire Wire Line
 	1350 6050 1350 6550
-Connection ~ 1350 6550
 Text HLabel 3250 6200 3    50   Input ~ 0
 LINE_OUT_A
 Wire Wire Line
@@ -514,40 +449,13 @@ $EndComp
 Wire Wire Line
 	7750 2100 8300 2100
 Connection ~ 7750 2100
-$Comp
-L power:GND #PWR?
-U 1 1 5D4049E9
-P 6750 3000
-AR Path="/5D3A0EFE/5D4049E9" Ref="#PWR?"  Part="1" 
-AR Path="/5D3F56F3/5D4049E9" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 6750 2750 50  0001 C CNN
-F 1 "GND" H 6755 2827 50  0000 C CNN
-F 2 "" H 6750 3000 50  0001 C CNN
-F 3 "" H 6750 3000 50  0001 C CNN
-	1    6750 3000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6750 3000 6750 2950
 Wire Wire Line
 	7300 2950 6750 2950
 Connection ~ 6750 2950
-$Comp
-L power:GND #PWR?
-U 1 1 5D4049F2
-P 7750 2400
-AR Path="/5D3A0EFE/5D4049F2" Ref="#PWR?"  Part="1" 
-AR Path="/5D3F56F3/5D4049F2" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 7750 2150 50  0001 C CNN
-F 1 "GND" H 7755 2227 50  0000 C CNN
-F 2 "" H 7750 2400 50  0001 C CNN
-F 3 "" H 7750 2400 50  0001 C CNN
-	1    7750 2400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7750 2400 8300 2400
-Connection ~ 7750 2400
 Wire Wire Line
 	7300 2650 6750 2650
 Connection ~ 6750 2650
@@ -610,19 +518,6 @@ Wire Wire Line
 	10100 2550 10100 2650
 Wire Wire Line
 	10100 2650 10000 2650
-$Comp
-L power:GND #PWR?
-U 1 1 5D404A1B
-P 9000 2750
-AR Path="/5D3A0EFE/5D404A1B" Ref="#PWR?"  Part="1" 
-AR Path="/5D3F56F3/5D404A1B" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 9000 2500 50  0001 C CNN
-F 1 "GND" H 9005 2577 50  0000 C CNN
-F 2 "" H 9000 2750 50  0001 C CNN
-F 3 "" H 9000 2750 50  0001 C CNN
-	1    9000 2750
-	1    0    0    -1  
-$EndComp
 Text GLabel 10550 2350 1    50   Input ~ 0
 +12V_UNREG
 Wire Wire Line
@@ -803,24 +698,12 @@ Wire Wire Line
 	4750 6650 4750 6700
 Wire Wire Line
 	4750 6700 5400 6700
-$Comp
-L power:GND #PWR?
-U 1 1 5D4105E9
-P 5950 7000
-F 0 "#PWR?" H 5950 6750 50  0001 C CNN
-F 1 "GND" H 5955 6827 50  0000 C CNN
-F 2 "" H 5950 7000 50  0001 C CNN
-F 3 "" H 5950 7000 50  0001 C CNN
-	1    5950 7000
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	6050 6500 5950 6500
 Wire Wire Line
 	6250 7000 5950 7000
 Wire Wire Line
 	5950 6500 5950 7000
-Connection ~ 5950 7000
 Text HLabel 4450 6650 3    50   Input ~ 0
 LINE_OUT_B
 Wire Wire Line
@@ -844,17 +727,6 @@ $EndComp
 Wire Wire Line
 	4650 2600 4650 3150
 $Comp
-L power:GND #PWR?
-U 1 1 5D4322C8
-P 4650 3450
-F 0 "#PWR?" H 4650 3200 50  0001 C CNN
-F 1 "GND" H 4655 3277 50  0000 C CNN
-F 2 "" H 4650 3450 50  0001 C CNN
-F 3 "" H 4650 3450 50  0001 C CNN
-	1    4650 3450
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C?
 U 1 1 5D434729
 P 10550 3150
@@ -868,17 +740,6 @@ $EndComp
 Wire Wire Line
 	10550 2450 10550 3000
 $Comp
-L power:GND #PWR?
-U 1 1 5D434731
-P 10550 3300
-F 0 "#PWR?" H 10550 3050 50  0001 C CNN
-F 1 "GND" H 10555 3127 50  0000 C CNN
-F 2 "" H 10550 3300 50  0001 C CNN
-F 3 "" H 10550 3300 50  0001 C CNN
-	1    10550 3300
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C?
 U 1 1 5D4391B4
 P 4200 5700
@@ -891,19 +752,32 @@ F 3 "~" H 4200 5700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4200 5000 4200 5550
-$Comp
-L power:GND #PWR?
-U 1 1 5D4391BC
-P 4200 5850
-F 0 "#PWR?" H 4200 5600 50  0001 C CNN
-F 1 "GND" H 4205 5677 50  0000 C CNN
-F 2 "" H 4200 5850 50  0001 C CNN
-F 3 "" H 4200 5850 50  0001 C CNN
-	1    4200 5850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2550 5100 2550 5550
 Wire Wire Line
 	4750 5200 4750 6000
+Text GLabel 850  3150 3    50   Input ~ 0
+AGND
+Text GLabel 1850 2550 3    50   Input ~ 0
+AGND
+Text GLabel 3100 2900 3    50   Input ~ 0
+AGND
+Text GLabel 6750 3000 3    50   Input ~ 0
+AGND
+Text GLabel 4650 3450 3    50   Input ~ 0
+AGND
+Text GLabel 1350 6550 3    50   Input ~ 0
+AGND
+Text GLabel 3150 5300 0    50   Input ~ 0
+AGND
+Text GLabel 4200 5850 3    50   Input ~ 0
+AGND
+Text GLabel 5950 7000 3    50   Input ~ 0
+AGND
+Text GLabel 7750 2400 3    50   Input ~ 0
+AGND
+Text GLabel 9000 2750 3    50   Input ~ 0
+AGND
+Text GLabel 10550 3300 3    50   Input ~ 0
+AGND
 $EndSCHEMATC

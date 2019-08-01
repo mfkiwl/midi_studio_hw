@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
-LIBS:midi_studio_v1-cache
-EELAYER 26 0
+LIBS:main_board-cache
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -50,8 +50,8 @@ NoConn ~ 9850 3350
 NoConn ~ 9750 3350
 NoConn ~ 9650 3350
 NoConn ~ 9550 3350
-Text GLabel 9350 3350 3    50   Input ~ 0
-+9V6
+Text GLabel 9350 4300 3    50   Input ~ 0
++12V_UNREG
 Wire Wire Line
 	9450 3350 9450 3700
 Wire Wire Line
@@ -250,7 +250,7 @@ Wire Wire Line
 	8950 3400 8950 3450
 Text GLabel 8750 3350 3    50   Input ~ 0
 LTDC_CS
-Text Notes 8650 4350 0    50   ~ 0
+Text Notes 6800 4400 0    50   ~ 0
 Display has to be initialized by sending commands via SPI.\nUse LTDC_CS to select this chip on the bus.
 Text GLabel 8250 3350 3    50   Input ~ 0
 SPI1_MISO
@@ -344,4 +344,19 @@ Text GLabel 6950 3800 3    50   Input ~ 0
 DGND
 Text GLabel 8650 3950 3    50   Input ~ 0
 DGND
+$Comp
+L Device:R R?
+U 1 1 5D39FAE2
+P 9350 4150
+F 0 "R?" H 9420 4196 50  0000 L CNN
+F 1 "120R" H 9420 4105 50  0000 L CNN
+F 2 "" V 9280 4150 50  0001 C CNN
+F 3 "~" H 9350 4150 50  0001 C CNN
+	1    9350 4150
+	1    0    0    -1  
+$EndComp
+Text Notes 9550 4750 0    50   ~ 0
+Delivers ~~20mA at 9.6 V to backlight LEDs.
+Wire Wire Line
+	9350 4000 9350 3350
 $EndSCHEMATC

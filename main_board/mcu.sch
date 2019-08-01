@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
 LIBS:main_board-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 13
+Sheet 2 12
 Title ""
 Date ""
 Rev ""
@@ -450,4 +450,8 @@ Text GLabel 4150 4250 0    50   Input ~ 0
 LTDC_RESET
 Text GLabel 4150 5250 0    50   Input ~ 0
 MCU_VCAP
+Text GLabel 4150 2400 0    50   Input ~ 0
+ENC2_SW
+Text GLabel 1500 4850 0    50   Input ~ 0
+ENC1_SW
 $EndSCHEMATC

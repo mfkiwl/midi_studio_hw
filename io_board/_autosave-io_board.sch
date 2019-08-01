@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
+Sheet 1 9
 Title ""
 Date ""
 Rev ""
@@ -113,5 +113,17 @@ S 3000 1000 1050 750
 U 5D434222
 F0 "MIDI I/O" 50
 F1 "MIDI_io.sch" 50
+$EndSheet
+$Sheet
+S 3100 3150 1050 650 
+U 5D472DBF
+F0 "SDCARD" 50
+F1 "sdcard.sch" 50
+$EndSheet
+$Sheet
+S 4500 1000 1100 750 
+U 5D436844
+F0 "USB" 50
+F1 "USB.sch" 50
 $EndSheet
 $EndSCHEMATC

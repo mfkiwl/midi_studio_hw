@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
-LIBS:midi_studio_v1-cache
-EELAYER 26 0
+LIBS:main_board-cache
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -56,9 +56,9 @@ Text GLabel 1900 2350 0    50   Input ~ 0
 Text GLabel 1900 2450 0    50   Input ~ 0
 +5V_DIG
 Text GLabel 1900 2650 0    50   Input ~ 0
-+9V6
++12V_UNREG
 Text GLabel 1900 2750 0    50   Input ~ 0
-+9V6
++12V_UNREG
 Text GLabel 2700 1050 2    50   Input ~ 0
 DGND
 Text GLabel 1900 4150 0    50   Input ~ 0

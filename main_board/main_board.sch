@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
 LIBS:main_board-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 13
+Sheet 1 12
 Title "MIDI Studio Schematic"
 Date ""
 Rev ""
@@ -49,12 +49,6 @@ S 2100 1500 600  400
 U 5CFD50B3
 F0 "SDRAM" 50
 F1 "SDRAM.sch" 50
-$EndSheet
-$Sheet
-S 2900 1500 700  400 
-U 5CFEB435
-F0 "SD card" 50
-F1 "sdcard.sch" 50
 $EndSheet
 $Sheet
 S 3800 1500 750  450 
