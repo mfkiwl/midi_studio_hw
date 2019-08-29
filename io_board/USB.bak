@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 9
+Sheet 5 11
 Title ""
 Date ""
 Rev ""
@@ -36,7 +36,7 @@ L Device:Ferrite_Bead FB?
 U 1 1 5D43A103
 P 4950 3400
 F 0 "FB?" H 5087 3446 50  0000 L CNN
-F 1 "Ferrite_Bead" H 5087 3355 50  0000 L CNN
+F 1 "BLM21BD272SH1L" H 5087 3355 50  0000 L CNN
 F 2 "" V 4880 3400 50  0001 C CNN
 F 3 "~" H 4950 3400 50  0001 C CNN
 	1    4950 3400

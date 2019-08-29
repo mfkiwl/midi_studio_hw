@@ -1,0 +1,297 @@
+EESchema Schematic File Version 4
+LIBS:io_board-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 11 11
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 3500 2050 0    50   Input ~ 0
++3V3
+$Comp
+L Device:Rotary_Encoder_Switch SW?
+U 1 1 5D454C12
+P 4100 3200
+F 0 "SW?" V 4054 3430 50  0000 L CNN
+F 1 "BOURNS_PEC12R-3225F-S0024" V 4145 3430 50  0000 L CNN
+F 2 "" H 3950 3360 50  0001 C CNN
+F 3 "~" H 4100 3460 50  0001 C CNN
+	1    4100 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4000 2550 4000 2900
+$Comp
+L Device:R R?
+U 1 1 5D458902
+P 4350 2550
+F 0 "R?" V 4143 2550 50  0000 C CNN
+F 1 "10K" V 4234 2550 50  0000 C CNN
+F 2 "" V 4280 2550 50  0001 C CNN
+F 3 "~" H 4350 2550 50  0001 C CNN
+	1    4350 2550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4200 2550 4200 2900
+Wire Wire Line
+	3500 2050 3700 2050
+Wire Wire Line
+	3700 2050 3700 2550
+Wire Wire Line
+	3700 2050 4500 2050
+Wire Wire Line
+	4500 2050 4500 2550
+Connection ~ 3700 2050
+$Comp
+L Device:R R?
+U 1 1 5D455ADB
+P 3850 2550
+F 0 "R?" V 3643 2550 50  0000 C CNN
+F 1 "10K" V 3734 2550 50  0000 C CNN
+F 2 "" V 3780 2550 50  0001 C CNN
+F 3 "~" H 3850 2550 50  0001 C CNN
+	1    3850 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D45B243
+P 5450 2900
+F 0 "R?" V 5243 2900 50  0000 C CNN
+F 1 "10K" V 5334 2900 50  0000 C CNN
+F 2 "" V 5380 2900 50  0001 C CNN
+F 3 "~" H 5450 2900 50  0001 C CNN
+	1    5450 2900
+	0    -1   1    0   
+$EndComp
+Connection ~ 4200 2900
+Wire Wire Line
+	4200 2900 5300 2900
+$Comp
+L Device:C C?
+U 1 1 5D45BEB5
+P 5800 3200
+F 0 "C?" H 5915 3246 50  0000 L CNN
+F 1 "10nF" H 5915 3155 50  0000 L CNN
+F 2 "" H 5838 3050 50  0001 C CNN
+F 3 "~" H 5800 3200 50  0001 C CNN
+	1    5800 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D45E145
+P 2750 2900
+F 0 "R?" V 2543 2900 50  0000 C CNN
+F 1 "10K" V 2634 2900 50  0000 C CNN
+F 2 "" V 2680 2900 50  0001 C CNN
+F 3 "~" H 2750 2900 50  0001 C CNN
+	1    2750 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4000 2900 2900 2900
+$Comp
+L Device:C C?
+U 1 1 5D45E14C
+P 2600 3200
+F 0 "C?" H 2715 3246 50  0000 L CNN
+F 1 "10nF" H 2715 3155 50  0000 L CNN
+F 2 "" H 2638 3050 50  0001 C CNN
+F 3 "~" H 2600 3200 50  0001 C CNN
+	1    2600 3200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 2900 2600 3050
+Connection ~ 4000 2900
+Text GLabel 2600 4100 0    50   Input ~ 0
+DGND
+Wire Wire Line
+	2600 3350 2600 4100
+Wire Wire Line
+	4200 3500 4200 4100
+Connection ~ 4200 4100
+Wire Wire Line
+	4200 4100 3750 4100
+Wire Wire Line
+	4100 2900 4100 2800
+Wire Wire Line
+	4100 2800 3750 2800
+Wire Wire Line
+	3750 2800 3750 4100
+Connection ~ 3750 4100
+Wire Wire Line
+	3750 4100 2600 4100
+Text GLabel 5900 2900 2    50   Input ~ 0
+ENC2_SIG_A
+Text GLabel 2250 2900 0    50   Input ~ 0
+ENC2_SIG_B
+Text GLabel 4000 3600 3    50   Input ~ 0
+ENC2_SW
+Wire Wire Line
+	4000 3500 4000 3600
+Wire Wire Line
+	5900 2900 5800 2900
+Wire Wire Line
+	2250 2900 2600 2900
+Connection ~ 2600 2900
+Text GLabel 3450 4500 0    50   Input ~ 0
++3V3
+Wire Wire Line
+	3950 5000 3950 5350
+$Comp
+L Device:R R?
+U 1 1 5D46D4F0
+P 4300 5000
+F 0 "R?" V 4093 5000 50  0000 C CNN
+F 1 "10K" V 4184 5000 50  0000 C CNN
+F 2 "" V 4230 5000 50  0001 C CNN
+F 3 "~" H 4300 5000 50  0001 C CNN
+	1    4300 5000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4150 5000 4150 5350
+Wire Wire Line
+	3450 4500 3650 4500
+Wire Wire Line
+	3650 4500 3650 5000
+Wire Wire Line
+	3650 4500 4450 4500
+Wire Wire Line
+	4450 4500 4450 5000
+Connection ~ 3650 4500
+$Comp
+L Device:R R?
+U 1 1 5D46D4FC
+P 3800 5000
+F 0 "R?" V 3593 5000 50  0000 C CNN
+F 1 "10K" V 3684 5000 50  0000 C CNN
+F 2 "" V 3730 5000 50  0001 C CNN
+F 3 "~" H 3800 5000 50  0001 C CNN
+	1    3800 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D46D502
+P 5400 5350
+F 0 "R?" V 5193 5350 50  0000 C CNN
+F 1 "10K" V 5284 5350 50  0000 C CNN
+F 2 "" V 5330 5350 50  0001 C CNN
+F 3 "~" H 5400 5350 50  0001 C CNN
+	1    5400 5350
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	4150 5350 5250 5350
+$Comp
+L Device:C C?
+U 1 1 5D46D50A
+P 5750 5650
+F 0 "C?" H 5865 5696 50  0000 L CNN
+F 1 "10nF" H 5865 5605 50  0000 L CNN
+F 2 "" H 5788 5500 50  0001 C CNN
+F 3 "~" H 5750 5650 50  0001 C CNN
+	1    5750 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D46D511
+P 2700 5350
+F 0 "R?" V 2493 5350 50  0000 C CNN
+F 1 "10K" V 2584 5350 50  0000 C CNN
+F 2 "" V 2630 5350 50  0001 C CNN
+F 3 "~" H 2700 5350 50  0001 C CNN
+	1    2700 5350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3950 5350 2850 5350
+$Comp
+L Device:C C?
+U 1 1 5D46D518
+P 2550 5650
+F 0 "C?" H 2665 5696 50  0000 L CNN
+F 1 "10nF" H 2665 5605 50  0000 L CNN
+F 2 "" H 2588 5500 50  0001 C CNN
+F 3 "~" H 2550 5650 50  0001 C CNN
+	1    2550 5650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 5350 2550 5500
+Text GLabel 2550 6550 0    50   Input ~ 0
+DGND
+Wire Wire Line
+	2550 5800 2550 6550
+Wire Wire Line
+	4150 5950 4150 6550
+Connection ~ 4150 6550
+Wire Wire Line
+	4150 6550 3700 6550
+Wire Wire Line
+	4050 5350 4050 5250
+Wire Wire Line
+	4050 5250 3700 5250
+Wire Wire Line
+	3700 5250 3700 6550
+Connection ~ 3700 6550
+Wire Wire Line
+	3700 6550 2550 6550
+Text GLabel 5850 5350 2    50   Input ~ 0
+ENC1_SIG_A
+Text GLabel 2200 5350 0    50   Input ~ 0
+ENC1_SIG_B
+Text GLabel 3950 6050 3    50   Input ~ 0
+ENC1_SW
+Wire Wire Line
+	3950 5950 3950 6050
+Wire Wire Line
+	5850 5350 5750 5350
+Wire Wire Line
+	2200 5350 2550 5350
+Connection ~ 2550 5350
+$Comp
+L Device:Rotary_Encoder_Switch SW?
+U 1 1 5D46F637
+P 4050 5650
+F 0 "SW?" V 4004 5880 50  0000 L CNN
+F 1 "BOURNS_PEC12R-3225F-S0024" V 4095 5880 50  0000 L CNN
+F 2 "" H 3900 5810 50  0001 C CNN
+F 3 "~" H 4050 5910 50  0001 C CNN
+	1    4050 5650
+	0    1    1    0   
+$EndComp
+Connection ~ 4150 5350
+Connection ~ 3950 5350
+Wire Wire Line
+	5800 2900 5800 3050
+Connection ~ 5800 2900
+Wire Wire Line
+	5800 2900 5600 2900
+Wire Wire Line
+	5800 3350 5800 4100
+Wire Wire Line
+	4200 4100 5800 4100
+Wire Wire Line
+	5750 5350 5750 5500
+Connection ~ 5750 5350
+Wire Wire Line
+	5750 5350 5550 5350
+Wire Wire Line
+	5750 5800 5750 6550
+Wire Wire Line
+	4150 6550 5750 6550
+$EndSCHEMATC

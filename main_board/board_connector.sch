@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:main_board-cache
+LIBS:io_board-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 12 12
+Sheet 10 11
 Title ""
 Date ""
 Rev ""
@@ -61,45 +61,45 @@ Text GLabel 1900 2750 0    50   Input ~ 0
 +12V_UNREG
 Text GLabel 2700 1050 2    50   Input ~ 0
 DGND
-Text GLabel 1900 4150 0    50   Input ~ 0
+Text GLabel 1900 5650 0    50   Input ~ 0
 SDMMC1_D1
-Text GLabel 1900 4250 0    50   Input ~ 0
+Text GLabel 1900 5750 0    50   Input ~ 0
 SDMMC1_D0
-Text GLabel 1900 4350 0    50   Input ~ 0
+Text GLabel 1900 5850 0    50   Input ~ 0
 SDMMC1_CK
-Text GLabel 1900 4450 0    50   Input ~ 0
+Text GLabel 1900 5950 0    50   Input ~ 0
 SDMMC1_CMD
-Text GLabel 1900 4550 0    50   Input ~ 0
+Text GLabel 1900 6050 0    50   Input ~ 0
 SDMMC1_D3
-Text GLabel 1900 4650 0    50   Input ~ 0
+Text GLabel 1900 6150 0    50   Input ~ 0
 SDMMC1_D2
-Text GLabel 1900 4750 0    50   Input ~ 0
+Text GLabel 1900 6250 0    50   Input ~ 0
 SD_DET
-Text GLabel 1900 3450 0    50   Input ~ 0
+Text GLabel 1900 4450 0    50   Input ~ 0
 MIDI_IN+_4
-Text GLabel 1900 3550 0    50   Input ~ 0
+Text GLabel 1900 4550 0    50   Input ~ 0
 MIDI_IN-_5
-Text GLabel 1900 3650 0    50   Input ~ 0
+Text GLabel 1900 4650 0    50   Input ~ 0
 MIDI_THRU+_4
-Text GLabel 1900 3750 0    50   Input ~ 0
+Text GLabel 1900 4750 0    50   Input ~ 0
 MIDI_THRU-_5
-Text GLabel 1900 3850 0    50   Input ~ 0
+Text GLabel 1900 4850 0    50   Input ~ 0
 MIDI_OUT+_4
-Text GLabel 1900 3950 0    50   Input ~ 0
-MIDI_OUT-_5
-Text GLabel 1900 3250 0    50   Input ~ 0
-ENC1_SIG_A
-Text GLabel 1900 3150 0    50   Input ~ 0
-ENC1_SIG_B
-Text GLabel 1900 3050 0    50   Input ~ 0
-ENC2_SIG_A
-Text GLabel 1900 2950 0    50   Input ~ 0
-ENC2_SIG_B
-Text GLabel 1900 5050 0    50   Input ~ 0
-USB_DP
-Text GLabel 1900 5150 0    50   Input ~ 0
-USB_DM
 Text GLabel 1900 4950 0    50   Input ~ 0
+MIDI_OUT-_5
+Text GLabel 1900 3750 0    50   Input ~ 0
+ENC1_SIG_A
+Text GLabel 1900 3650 0    50   Input ~ 0
+ENC1_SIG_B
+Text GLabel 1900 3550 0    50   Input ~ 0
+ENC2_SIG_A
+Text GLabel 1900 3450 0    50   Input ~ 0
+ENC2_SIG_B
+Text GLabel 1900 7050 0    50   Input ~ 0
+USB_DP
+Text GLabel 1900 7150 0    50   Input ~ 0
+USB_DM
+Text GLabel 1900 6950 0    50   Input ~ 0
 USB_VBUS
 Text GLabel 4400 7450 0    50   Input ~ 0
 +5V_ANA
@@ -186,64 +186,64 @@ Text GLabel 5200 7350 2    50   Input ~ 0
 AGND
 Text GLabel 5200 7450 2    50   Input ~ 0
 AGND
-Text GLabel 4400 6550 0    50   Input ~ 0
-ACODEC_VOUT1-
-Text GLabel 4400 6450 0    50   Input ~ 0
-ACODEC_VOUT1+
-Text GLabel 4400 6350 0    50   Input ~ 0
-ACODEC_VOUT2-
-Text GLabel 4400 6250 0    50   Input ~ 0
-ACODEC_VOUT2+
-Text GLabel 4400 6150 0    50   Input ~ 0
-ACODEC_VOUT3-
-Text GLabel 4400 6050 0    50   Input ~ 0
-ACODEC_VOUT3+
-Text GLabel 4400 5950 0    50   Input ~ 0
-ACODEC_VOUT4-
-Text GLabel 4400 5850 0    50   Input ~ 0
-ACODEC_VOUT4+
-Text GLabel 4400 5750 0    50   Input ~ 0
-ACODEC_VOUT5-
-Text GLabel 4400 5650 0    50   Input ~ 0
-ACODEC_VOUT5+
-Text GLabel 4400 5550 0    50   Input ~ 0
-ACODEC_VOUT6-
-Text GLabel 4400 5450 0    50   Input ~ 0
-ACODEC_VOUT6+
-Text GLabel 4400 5350 0    50   Input ~ 0
-ACODEC_VOUT7-
-Text GLabel 4400 5250 0    50   Input ~ 0
-ACODEC_VOUT7+
-Text GLabel 4400 5150 0    50   Input ~ 0
-ACODEC_VOUT8-
-Text GLabel 4400 5050 0    50   Input ~ 0
-ACODEC_VOUT8+
-Text GLabel 4400 3750 0    50   Input ~ 0
-ACODEC_VIN1-
-Text GLabel 4400 3850 0    50   Input ~ 0
-ACODEC_VIN1+
-Text GLabel 4400 3950 0    50   Input ~ 0
-ACODEC_VIN2-
-Text GLabel 4400 4050 0    50   Input ~ 0
-ACODEC_VIN2+
-Text GLabel 4400 4150 0    50   Input ~ 0
-ACODEC_VIN3-
-Text GLabel 4400 4250 0    50   Input ~ 0
-ACODEC_VIN3+
-Text GLabel 4400 4350 0    50   Input ~ 0
-ACODEC_VIN4-
-Text GLabel 4400 4450 0    50   Input ~ 0
-ACODEC_VIN4+
-Text GLabel 4400 4550 0    50   Input ~ 0
-ACODEC_VIN5-
-Text GLabel 4400 4650 0    50   Input ~ 0
-ACODEC_VIN5+
-Text GLabel 4400 4750 0    50   Input ~ 0
-ACODEC_VIN6-
+Text GLabel 1900 3350 0    50   Input ~ 0
+ENC2_SW
+Text GLabel 1900 3850 0    50   Input ~ 0
+ENC1_SW
 Text GLabel 4400 4850 0    50   Input ~ 0
 ACODEC_VIN6+
-Text GLabel 1900 2850 0    50   Input ~ 0
-ENC2_SW
-Text GLabel 1900 3350 0    50   Input ~ 0
-ENC1_SW
+Text GLabel 4400 4750 0    50   Input ~ 0
+ACODEC_VIN6-
+Text GLabel 4400 4650 0    50   Input ~ 0
+ACODEC_VIN5+
+Text GLabel 4400 4550 0    50   Input ~ 0
+ACODEC_VIN5-
+Text GLabel 4400 4450 0    50   Input ~ 0
+ACODEC_VIN4+
+Text GLabel 4400 4350 0    50   Input ~ 0
+ACODEC_VIN4-
+Text GLabel 4400 4250 0    50   Input ~ 0
+ACODEC_VIN3+
+Text GLabel 4400 4150 0    50   Input ~ 0
+ACODEC_VIN3-
+Text GLabel 4400 4050 0    50   Input ~ 0
+ACODEC_VIN2+
+Text GLabel 4400 3950 0    50   Input ~ 0
+ACODEC_VIN2-
+Text GLabel 4400 3850 0    50   Input ~ 0
+ACODEC_VIN1+
+Text GLabel 4400 3750 0    50   Input ~ 0
+ACODEC_VIN1-
+Text GLabel 4400 5050 0    50   Input ~ 0
+ACODEC_VOUT8+
+Text GLabel 4400 5150 0    50   Input ~ 0
+ACODEC_VOUT8-
+Text GLabel 4400 5250 0    50   Input ~ 0
+ACODEC_VOUT7+
+Text GLabel 4400 5350 0    50   Input ~ 0
+ACODEC_VOUT7-
+Text GLabel 4400 5450 0    50   Input ~ 0
+ACODEC_VOUT6+
+Text GLabel 4400 5550 0    50   Input ~ 0
+ACODEC_VOUT6-
+Text GLabel 4400 5650 0    50   Input ~ 0
+ACODEC_VOUT5+
+Text GLabel 4400 5750 0    50   Input ~ 0
+ACODEC_VOUT5-
+Text GLabel 4400 5850 0    50   Input ~ 0
+ACODEC_VOUT4+
+Text GLabel 4400 5950 0    50   Input ~ 0
+ACODEC_VOUT4-
+Text GLabel 4400 6050 0    50   Input ~ 0
+ACODEC_VOUT3+
+Text GLabel 4400 6150 0    50   Input ~ 0
+ACODEC_VOUT3-
+Text GLabel 4400 6250 0    50   Input ~ 0
+ACODEC_VOUT2+
+Text GLabel 4400 6350 0    50   Input ~ 0
+ACODEC_VOUT2-
+Text GLabel 4400 6450 0    50   Input ~ 0
+ACODEC_VOUT1+
+Text GLabel 4400 6550 0    50   Input ~ 0
+ACODEC_VOUT1-
 $EndSCHEMATC
